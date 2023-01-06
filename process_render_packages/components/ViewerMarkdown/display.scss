@@ -1,0 +1,270 @@
+pre{
+  background-color: #0C0C0C;
+  font-size: 16px; 
+  overflow-x: auto;
+}
+
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}
+
+code.hljs {
+  padding: 3px 5px
+}
+
+strong{
+  font-weight: bold;
+}
+
+code{
+color: rgb(169, 0, 0);
+background-color: #F9F2F6;
+}
+
+.jcstdio {
+color: #ddd;
+background-color: #0C0C0C;
+}
+
+.markdown_viewer{
+padding: 12px;
+background-color: #FFFFFF;
+width: 50%;
+}
+
+.hljs-keyword,
+.hljs-link,
+.hljs-literal,
+.hljs-section,
+.hljs-selector-tag {
+  color: #fff
+}
+
+.hljs-number{
+color: #fff89b;;
+}
+
+.hljs-attribute{
+color: #97b757;
+}
+
+.hljs-addition,
+.hljs-bullet,
+.hljs-name,
+.hljs-string,
+.hljs-symbol,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-title,
+.hljs-type,
+.hljs-variable {
+  color: #9CDCFE
+}
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta,
+.hljs-quote {
+  color: #11A10E
+}
+
+.hljs-doctag,
+.hljs-keyword{
+color: #ce71c6; 
+
+}
+.hljs-literal{
+color: #fff3ba;
+}
+.hljs-name,
+.hljs-section,
+.hljs-selector-tag,
+.hljs-strong,
+.hljs-title,
+.hljs-type {
+  font-weight: 700
+}
+
+.hljs-emphasis {
+  font-style: italic
+}
+
+.hljs-function {
+  color: #FFD710;
+}
+
+.hljs-title{
+color: #179FFF;
+}
+
+.hljs-built_in{
+color: #569CD6;
+}
+
+
+
+.markdown_viewer table {
+  border-collapse: separate;
+  text-indent: initial;
+  border-spacing: 0px;
+}
+
+.markdown_viewer thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.markdown_viewer table tr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.markdown_viewer tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+
+
+.markdown_viewer table tr th {
+  font-weight: 700;
+  background-color: #EFF3F5;
+}
+
+.markdown_viewer table tr td, .markdown_viewer table tr th {
+  font-size: 14px;
+  color: #4f4f4f;
+  line-height: 22px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  word-break: normal!important;
+  vertical-align: middle;
+}
+
+.markdown_viewer table td {
+  display: table-cell;
+  vertical-align: inherit;
+  background-color: #fffdf5;
+}
+
+.markdown_viewer td, .markdown_viewer th {
+  border-right: 1px solid #dcdcdc;
+  padding: 8px 12px;
+}
+
+.markdown_viewer table tr td, .markdown_viewer table tr th {
+  font-size: 14px;
+  color: #4f4f4f;
+  line-height: 22px;
+  border: 1px solid #ddd;
+  padding: 3px;
+  word-break: normal!important;
+  vertical-align: middle;
+}
+
+.language-css{
+color: #dcdcdc;
+}
+
+.language-css .hljs-selector-attr{
+color: #e5b0ff;
+}
+
+.language-css .hljs-built_in{
+color: #5db6ff;
+}
+
+.language-css .hljs-attribute{
+color: #caff61;
+}
+
+.language-css .hljs-number{
+color: #fff99e;
+}
+
+.markdown_viewer blockquote {
+display: block;
+padding: 16px;
+margin: 0 0 24px;
+border-left: 8px solid #dddfe4;
+background: #eef0f4;
+overflow: auto;
+word-break: break-word!important;
+}
+
+.markdown_viewer blockquote {
+color: rgba(0,0,0,.5);
+padding-left: 1.5em;
+}
+
+
+
+/** Markdown标题 */
+
+tl{
+width: 100%;
+display: flex;
+justify-content: center;
+font-size:32px;
+color:#0E549B;
+font-weight: 600;
+border-bottom: 3px solid #cdcdcd;
+padding-bottom: 16px;
+margin-bottom: 29px;
+}
+
+.markdown_viewer h1{
+font-size: 24px;
+border-left: #e940ff solid 9px;
+padding-left: 8px;
+margin-top: 8px;
+margin-bottom: 8px;
+}
+
+.markdown_viewer h2{
+font-size: 22px;
+border-left: #ff7327 solid 8px;
+padding-left: 7px;
+margin-top: 7px;
+margin-bottom: 7px;
+}
+
+.markdown_viewer h3{
+font-size: 20px;
+border-left: #02c5ab solid 7px;
+padding-left: 6px;
+margin-top: 6px;
+margin-bottom: 6px;
+}
+
+.markdown_viewer h4{
+font-size: 18px;
+border-left: #0e64a1 solid 6px;
+padding-left: 5px;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+.markdown_viewer h5{
+font-size: 16px;
+border-left: #415782 solid 5px;
+padding-left: 4px;
+margin-top: 4px;
+margin-bottom: 4px;
+}
+
+
+
+.markdown_viewer h6{
+font-size: 14px;
+border-left: #26334d solid 4px;
+padding-left: 4px;
+margin-top: 3px;
+margin-bottom: 3px;
+}
+

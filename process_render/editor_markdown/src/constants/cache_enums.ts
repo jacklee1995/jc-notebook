@@ -1,0 +1,4 @@
+export const LATEST_FILES = '__LATEST__FILES__';
+export const LATEST_FOLDERS = '__LATEST__FOLDERS__';
+export const CURRENT_FOLDER = '__CURRENT__FOLDER__';
+export const IS_FIRST_OPEN_MARKDOWN_EDITOR = '__IS_FIRST_OPEN_MARKDOWN_EDITOR__';

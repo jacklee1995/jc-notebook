@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.web.json",
+  "include": [
+    "process_render/editor_markdown/src/**/*.ts",
+    "process_render/editor_markdown/src/**/*.d.ts",
+    "process_render/editor_markdown/src/**/*.tsx",
+    "process_render/editor_markdown/src/**/*.vue",
+    "process_render/editor_markdown/env.d.ts",
+    "process_render/editor_markdown/src/components/**/*.vue",
+    "process_render/editor_markdown/src/components/**/*.ts",
+    "process_render/editor_markdown/src/components/**/*.d.ts",
+    "process_render/editor_markdown/src/stores/**/*",
+    "process_render/editor_markdown/src/stores/modules/*", "process_render/editor_text/src/components/EditorText",
+  ]
+}

@@ -1,0 +1,202 @@
+/* JC-Dark theme */
+
+.cm-s-jcmd.CodeMirror { 
+  background-color: #d2d2d2; 
+  color: #141414; 
+  font-size: 17px; 
+  font-family: Monaco, Menlo, "Ubuntu Mono", Consolas, source-code-pro, monospace; 
+}
+
+
+/* .cm-s-jcmd .CodeMirror-vscrollbar>div{
+  
+} */
+
+/* 超链接文字颜色*/
+.cm-s-jcmd .cm-url{
+  color: blue;
+}
+
+/* 光标颜色 */
+.cm-s-jcmd .CodeMirror-cursor { 
+  border-left: 2px solid #000000; 
+}
+
+/* MD样式 */
+.cm-s-jcmd span.cm-header{
+  color:#434343;
+}
+
+.cm-s-jcmd span.cm-header-1{
+  color:#434343;
+  font-size: 36px !important;
+}
+
+.cm-s-jcmd span.cm-header-2{
+  color:#434343;
+  font-size: 34px !important;
+}
+
+.cm-s-jcmd span.cm-header-3{
+  color:#434343;
+  font-size: 32px !important;
+}
+
+.cm-s-jcmd span.cm-header-4{
+  color:#434343;
+  font-size: 30px !important;
+}
+
+.cm-s-jcmd span.cm-header-5{
+  color:#434343;
+  font-size: 26px !important;
+}
+
+.cm-s-jcmd span.cm-header-6{
+  color:#434343;
+  font-size: 24px !important;
+}
+
+
+.cm-s-jcmd div.CodeMirror-selected { 
+  background: #254D76; 
+}
+
+.cm-s-jcmd .CodeMirror-line {
+  white-space: pre-wrap;
+  word-break: break-all;
+  caret-color: #000000 !important;
+}
+
+.cm-s-jcmd span{
+  caret-color: #000000 !important;
+}
+
+.cm-s-jcmd .CodeMirror-code {
+  white-space: pre-wrap !important;
+  word-break: break-all !important;
+  width: 600px;
+}
+.CodeMirror-gutter-wrapper{
+  white-space: pre-wrap !important;
+  word-break: break-all !important;
+}
+.cm-s-jcmd .CodeMirror-line::selection, .cm-s-jcmd .CodeMirror-line > span::selection, .cm-s-jcmd .CodeMirror-line > span > span::selection { 
+  background: rgba(73, 72, 62, .99); 
+}
+
+.cm-s-jcmd .CodeMirror-line::-moz-selection, .cm-s-jcmd .CodeMirror-line > span::-moz-selection, .cm-s-jcmd .CodeMirror-line > span > span::-moz-selection { 
+  background: rgba(73, 72, 62, .99); 
+}
+
+.cm-s-jcmd .CodeMirror-gutters { 
+  background: #272822; 
+  border-right: 0px; 
+}
+
+.cm-s-jcmd .CodeMirror-guttermarker { 
+  color: white; 
+}
+
+.cm-s-jcmd .CodeMirror-guttermarker-subtle { 
+  color: #d0d0d0; 
+}
+
+.cm-s-jcmd .CodeMirror-linenumber { 
+  color: #d0d0d0; 
+}
+
+
+/** 代码注释 */
+.cm-s-jcmd span.cm-comment { 
+  color: #188000; 
+}
+
+.cm-s-jcmd span.cm-atom { 
+  color: #6eacde; 
+}
+
+.cm-s-jcmd span.cm-number { 
+  color: #fe6100; 
+}
+
+.cm-s-jcmd span.cm-comment.cm-attribute { 
+  color: #97b757; 
+}
+
+.cm-s-jcmd span.cm-comment.cm-def { 
+  color: #bc9262; 
+}
+
+.cm-s-jcmd span.cm-comment.cm-tag { 
+  color: #bc6283; 
+}
+
+.cm-s-jcmd span.cm-comment.cm-type { 
+  color: #5998a6; 
+}
+
+.cm-s-jcmd span.cm-property, .cm-s-jcmd span.cm-attribute { 
+  color: #4f0acf; 
+}
+
+.cm-s-jcmd span.cm-keyword { 
+  color: #ce71c6; 
+  font-size: 15px;  
+}
+
+.cm-s-jcmd span.cm-builtin { 
+  color: #66d9ef; 
+}
+
+.cm-s-jcmd span.cm-string { 
+  color: #924200; 
+}
+
+.cm-s-jcmd .cm-string-2 { 
+  color: #f37171; 
+}
+
+.cm-s-jcmd .cm-operator {
+  color: #fcff4f;
+}
+.cm-s-jcmd span.cm-variable { 
+  color: #924200; 
+}
+
+.cm-s-jcmd span.cm-variable-2 { 
+  color: #924200; 
+}
+
+.cm-s-jcmd span.cm-variable-3, .cm-s-jcmd span.cm-type { 
+  color: #924200; 
+}
+
+.cm-s-jcmd span.cm-def { 
+  color: #9CDCFE; 
+}
+
+.cm-s-jcmd span.cm-bracket { 
+  color: #808080 !important; 
+}
+
+.cm-s-jcmd span.cm-tag { 
+  color: #c40082; 
+}
+
+.cm-s-jcmd span.cm-link { 
+  color: #000000; 
+}
+
+.cm-s-jcmd span.cm-error { 
+  text-decoration: underline wavy rgb(255, 164, 103) 1px; 
+}
+
+.cm-s-jcmd .CodeMirror-activeline-background { 
+  background: #373831; 
+}
+
+.cm-s-jcmd .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}

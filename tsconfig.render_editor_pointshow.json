@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.web.json",
+  "include": [
+    "process_render/editor_pointshow/*",
+    "process_render/editor_pointshow/src/**/*.ts",
+    "process_render/editor_pointshow/src/**/*.d.ts",
+    "process_render/editor_pointshow/src/**/*.tsx",
+    "process_render/editor_pointshow/src/**/*.vue",
+    "process_render/editor_pointshow/env.d.ts"
+  ]
+}

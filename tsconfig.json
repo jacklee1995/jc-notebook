@@ -1,0 +1,19 @@
+{
+  "references": [
+    { "path": "./tsconfig.render_index.json" },
+    { "path": "./tsconfig.render_editor_text.json" },
+    { "path": "./tsconfig.render_editor_markdown.json" },
+    { "path": "./tsconfig.render_editor_mindmap.json" },
+    { "path": "./tsconfig.render_editor_pointshow.json" },
+    { "path": "./tsconfig.render_sources_manager.json" },
+    { "path": "./tsconfig.render_viewer_markdown.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "files": [],
+  "compilerOptions": {
+    "composite": true,
+    "types": [],
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+}

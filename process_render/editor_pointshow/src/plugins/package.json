@@ -1,0 +1,11 @@
+{
+  "name": "@jcstudio/plugins",
+  "version": "0.0.1",
+  "description": "jcstudio plugins.",
+  "main": "index.js",
+  "module": "index.ts",
+  "unpkg": "index.js",
+  "peerDependencies": {
+    "vue": "^3.2.41"
+  }
+}

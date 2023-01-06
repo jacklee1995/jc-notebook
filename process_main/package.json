@@ -1,0 +1,133 @@
+{
+  "name": "@jc-notebook/process_main",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "./dist/src/main.js",
+  "author": {
+    "name": "jcLee1995",
+    "email": "291148484@163.com",
+    "url": "https://github.com/jacklee1995"
+  },
+  "dependencies": {
+    "@electron/asar": "^3.2.2",
+    "@electron/osx-sign": "^1.0.1",
+    "@electron/remote": "^2.0.8",
+    "date-format": "^4.0.14",
+    "debug": "^4.3.4",
+    "electron-squirrel-startup": "^1.0.0",
+    "flatted": "^3.2.7",
+    "fs-extra": "^11.1.0",
+    "graceful-fs": "^4.2.10",
+    "jsonfile": "^6.1.0",
+    "log4js": "^6.7.1",
+    "ms": "^2.1.3",
+    "node-gyp": "^9.3.0",
+    "rfdc": "^1.3.0",
+    "streamroller": "^3.1.3",
+    "universalify": "^2.0.0"
+  },
+  "devDependencies": {
+    "@npmcli/fs": "^3.1.0",
+    "@types/node": "^18.11.10",
+    "concurrently": "^7.6.0",
+    "cross-env": "^7.0.3",
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0",
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.56.1",
+    "typescript": "^4.9.3",
+    "wait-on": "^6.0.1"
+  },
+  "scripts": {
+    "build:tsc": "tsc ",
+    "build": "pnpm run build:tsc",
+    "electron:run": "electron ./dist/src/main.js",
+    "build:app": "electron-builder"
+  },
+  "build": {
+    "appId": "tech.thispage.jcnotebook",
+    "productName": "jcNotebook",
+    "copyright": "Copyright © 2022 jcLee1995",
+    "win": {
+      "icon": "./public/favicon_256x256.ico",
+      "asar": true,
+      "requestedExecutionLevel": "requireAdministrator",
+      "compression": "store",
+      "executableName": "jcNotes",
+      "fileAssociations": [
+        {
+          "ext": ".md",
+          "name": ".MD ext",
+          "description": "MarkDown File (jc-notebook)",
+          "icon": "./public/file-markdown_256x256.ico"
+        },
+        {
+          "ext": ".xlmd",
+          "name": ".XLMD ext",
+          "description": "MarkDown XML File (jc-notebook)",
+          "icon": "./public/file-xlmd_256x256.ico"
+        },
+        {
+          "ext": ".txt",
+          "name": ".TXT ext",
+          "description": "TEXT File (jc-notebook)",
+          "icon": "./public/file-text_256x256.ico"
+        },
+        {
+          "ext": ".pdf",
+          "name": ".PDF ext",
+          "description": "PDF File (jc-notebook)",
+          "icon": "./public/file-pdf-color_256x256.ico"
+        }
+      ],
+      "extraFiles": [
+        {
+          "from": "./sources",
+          "to": "sources"
+        }
+      ],
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "files": [
+      "./dist/src/**/*",
+      "./dist_render/*",
+      "./dist_render/editor_markdown/**/*",
+      "./dist_render/editor_text/**/*",
+      "./dist_render/editor_pointshow/**/*",
+      "./dist_render/index/**/**/*",
+      "./dist_render/loading/**/*",
+      "./dist_render/sources_manager/**/*",
+      "./public/**/*",
+      "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+      "!**/node_modules/*.d.ts",
+      "!**/node_modules/.bin",
+      "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,xproj}",
+      "!.editorconfig",
+      "!**/._*",
+      "!**/{.DS_Store,.git,.hg,.svn,CVS,RCS,SCCS,.gitignore,.gitattributes}",
+      "!**/{__pycache__,thumbs.db,.flowconfig,.idea,.vs,.nyc_output}",
+      "!**/{appveyor.yml,.travis.yml,circle.yml}",
+      "!**/{npm-debug.log,yarn.lock,.yarn-integrity,.yarn-metadata.json}"
+    ],
+    "asar": true,
+    "icon": "./public/jcstudio_256x256.ico",
+    "directories": {
+      "buildResources": "resources",
+      "output": "release"
+    }
+  }
+}

@@ -1,0 +1,6843 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?gv6gs6');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?gv6gs6#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?gv6gs6') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?gv6gs6') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?gv6gs6##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="jcicon-"], [class*=" jcicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.jcicon-action-restore {
+  &:before {
+    content: $jcicon-action-restore; 
+  }
+}
+.jcicon-action-undo {
+  &:before {
+    content: $jcicon-action-undo; 
+  }
+}
+.jcicon-address-book .path1 {
+  &:before {
+    content: $jcicon-address-book-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-address-book .path2 {
+  &:before {
+    content: $jcicon-address-book-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-address-book .path3 {
+  &:before {
+    content: $jcicon-address-book-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-address-book .path4 {
+  &:before {
+    content: $jcicon-address-book-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-address-book .path5 {
+  &:before {
+    content: $jcicon-address-book-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-address-book .path6 {
+  &:before {
+    content: $jcicon-address-book-path6;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-address-book .path7 {
+  &:before {
+    content: $jcicon-address-book-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-address-book .path8 {
+  &:before {
+    content: $jcicon-address-book-path8;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-address-book .path9 {
+  &:before {
+    content: $jcicon-address-book-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-address-book .path10 {
+  &:before {
+    content: $jcicon-address-book-path10;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-address-book .path11 {
+  &:before {
+    content: $jcicon-address-book-path11;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-address-book-color .path1 {
+  &:before {
+    content: $jcicon-address-book-color-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-address-book-color .path2 {
+  &:before {
+    content: $jcicon-address-book-color-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 230, 128);
+  }
+}
+.jcicon-address-book-color .path3 {
+  &:before {
+    content: $jcicon-address-book-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-address-book-color .path4 {
+  &:before {
+    content: $jcicon-address-book-color-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 230, 128);
+  }
+}
+.jcicon-address-book-color .path5 {
+  &:before {
+    content: $jcicon-address-book-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-address-book-color .path6 {
+  &:before {
+    content: $jcicon-address-book-color-path6;  
+    margin-left: -1em;  
+    color: rgb(255, 230, 128);
+  }
+}
+.jcicon-address-book-color .path7 {
+  &:before {
+    content: $jcicon-address-book-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-address-book-color .path8 {
+  &:before {
+    content: $jcicon-address-book-color-path8;  
+    margin-left: -1em;  
+    color: rgb(255, 230, 128);
+  }
+}
+.jcicon-address-book-color .path9 {
+  &:before {
+    content: $jcicon-address-book-color-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-address-book-color .path10 {
+  &:before {
+    content: $jcicon-address-book-color-path10;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-address-book-color .path11 {
+  &:before {
+    content: $jcicon-address-book-color-path11;  
+    margin-left: -1em;  
+    color: rgb(255, 102, 0);
+  }
+}
+.jcicon-align-center {
+  &:before {
+    content: $jcicon-align-center; 
+  }
+}
+.jcicon-align-center-color .path1 {
+  &:before {
+    content: $jcicon-align-center-color-path1;  
+    color: rgb(212, 85, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-align-center-color .path2 {
+  &:before {
+    content: $jcicon-align-center-color-path2;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-align-center-color .path3 {
+  &:before {
+    content: $jcicon-align-center-color-path3;  
+    margin-left: -1em;  
+    color: rgb(34, 142, 142);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-align-center-color .path4 {
+  &:before {
+    content: $jcicon-align-center-color-path4;  
+    margin-left: -1em;  
+    color: rgb(34, 142, 142);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-align-justify {
+  &:before {
+    content: $jcicon-align-justify; 
+  }
+}
+.jcicon-align-justify-color .path1 {
+  &:before {
+    content: $jcicon-align-justify-color-path1;  
+    color: rgb(212, 85, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-align-justify-color .path2 {
+  &:before {
+    content: $jcicon-align-justify-color-path2;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-align-justify-color .path3 {
+  &:before {
+    content: $jcicon-align-justify-color-path3;  
+    margin-left: -1em;  
+    color: rgb(34, 142, 142);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-align-justify-color .path4 {
+  &:before {
+    content: $jcicon-align-justify-color-path4;  
+    margin-left: -1em;  
+    color: rgb(34, 142, 142);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-align-left .path1 {
+  &:before {
+    content: $jcicon-align-left-path1;  
+    color: rgb(212, 85, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-align-left .path2 {
+  &:before {
+    content: $jcicon-align-left-path2;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-align-left .path3 {
+  &:before {
+    content: $jcicon-align-left-path3;  
+    margin-left: -1em;  
+    color: rgb(34, 142, 142);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-align-left .path4 {
+  &:before {
+    content: $jcicon-align-left-path4;  
+    margin-left: -1em;  
+    color: rgb(34, 142, 142);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-align-left-color {
+  &:before {
+    content: $jcicon-align-left-color; 
+  }
+}
+.jcicon-align-right {
+  &:before {
+    content: $jcicon-align-right; 
+  }
+}
+.jcicon-align-right-color .path1 {
+  &:before {
+    content: $jcicon-align-right-color-path1;  
+    color: rgb(212, 85, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-align-right-color .path2 {
+  &:before {
+    content: $jcicon-align-right-color-path2;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-align-right-color .path3 {
+  &:before {
+    content: $jcicon-align-right-color-path3;  
+    margin-left: -1em;  
+    color: rgb(34, 142, 142);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-align-right-color .path4 {
+  &:before {
+    content: $jcicon-align-right-color-path4;  
+    margin-left: -1em;  
+    color: rgb(34, 142, 142);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-arrow-bottom-circle {
+  &:before {
+    content: $jcicon-arrow-bottom-circle; 
+  }
+}
+.jcicon-arrow-bottom-circle-color .path1 {
+  &:before {
+    content: $jcicon-arrow-bottom-circle-color-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-arrow-bottom-circle-color .path2 {
+  &:before {
+    content: $jcicon-arrow-bottom-circle-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-bottom-circle-color .path3 {
+  &:before {
+    content: $jcicon-arrow-bottom-circle-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-bottom-circle-color .path4 {
+  &:before {
+    content: $jcicon-arrow-bottom-circle-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-double-down {
+  &:before {
+    content: $jcicon-arrow-double-down; 
+  }
+}
+.jcicon-arrow-double-down-color .path1 {
+  &:before {
+    content: $jcicon-arrow-double-down-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-double-down-color .path2 {
+  &:before {
+    content: $jcicon-arrow-double-down-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-double-down-color .path3 {
+  &:before {
+    content: $jcicon-arrow-double-down-color-path3;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-arrow-double-down-color .path4 {
+  &:before {
+    content: $jcicon-arrow-double-down-color-path4;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-arrow-double-left {
+  &:before {
+    content: $jcicon-arrow-double-left; 
+  }
+}
+.jcicon-arrow-double-left-color .path1 {
+  &:before {
+    content: $jcicon-arrow-double-left-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-double-left-color .path2 {
+  &:before {
+    content: $jcicon-arrow-double-left-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-double-left-color .path3 {
+  &:before {
+    content: $jcicon-arrow-double-left-color-path3;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-arrow-double-left-color .path4 {
+  &:before {
+    content: $jcicon-arrow-double-left-color-path4;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-arrow-double-right {
+  &:before {
+    content: $jcicon-arrow-double-right; 
+  }
+}
+.jcicon-arrow-double-right-color .path1 {
+  &:before {
+    content: $jcicon-arrow-double-right-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-double-right-color .path2 {
+  &:before {
+    content: $jcicon-arrow-double-right-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-double-right-color .path3 {
+  &:before {
+    content: $jcicon-arrow-double-right-color-path3;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-arrow-double-right-color .path4 {
+  &:before {
+    content: $jcicon-arrow-double-right-color-path4;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-arrow-double-up {
+  &:before {
+    content: $jcicon-arrow-double-up; 
+  }
+}
+.jcicon-arrow-double-up-color .path1 {
+  &:before {
+    content: $jcicon-arrow-double-up-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-double-up-color .path2 {
+  &:before {
+    content: $jcicon-arrow-double-up-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-double-up-color .path3 {
+  &:before {
+    content: $jcicon-arrow-double-up-color-path3;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-arrow-double-up-color .path4 {
+  &:before {
+    content: $jcicon-arrow-double-up-color-path4;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-arrow-down {
+  &:before {
+    content: $jcicon-arrow-down; 
+  }
+}
+.jcicon-arrow-down-color .path1 {
+  &:before {
+    content: $jcicon-arrow-down-color-path1;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-arrow-down-color .path2 {
+  &:before {
+    content: $jcicon-arrow-down-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-down-color .path3 {
+  &:before {
+    content: $jcicon-arrow-down-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-left {
+  &:before {
+    content: $jcicon-arrow-left; 
+  }
+}
+.jcicon-arrow-left-circle {
+  &:before {
+    content: $jcicon-arrow-left-circle; 
+  }
+}
+.jcicon-arrow-left-circle-color .path1 {
+  &:before {
+    content: $jcicon-arrow-left-circle-color-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-arrow-left-circle-color .path2 {
+  &:before {
+    content: $jcicon-arrow-left-circle-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-left-circle-color .path3 {
+  &:before {
+    content: $jcicon-arrow-left-circle-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-left-circle-color .path4 {
+  &:before {
+    content: $jcicon-arrow-left-circle-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-left-color .path1 {
+  &:before {
+    content: $jcicon-arrow-left-color-path1;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-arrow-left-color .path2 {
+  &:before {
+    content: $jcicon-arrow-left-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-left-color .path3 {
+  &:before {
+    content: $jcicon-arrow-left-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-right {
+  &:before {
+    content: $jcicon-arrow-right; 
+  }
+}
+.jcicon-arrow-right-circle {
+  &:before {
+    content: $jcicon-arrow-right-circle; 
+  }
+}
+.jcicon-arrow-right-circle-color .path1 {
+  &:before {
+    content: $jcicon-arrow-right-circle-color-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-arrow-right-circle-color .path2 {
+  &:before {
+    content: $jcicon-arrow-right-circle-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-right-circle-color .path3 {
+  &:before {
+    content: $jcicon-arrow-right-circle-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-right-circle-color .path4 {
+  &:before {
+    content: $jcicon-arrow-right-circle-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-right-color .path1 {
+  &:before {
+    content: $jcicon-arrow-right-color-path1;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-arrow-right-color .path2 {
+  &:before {
+    content: $jcicon-arrow-right-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-right-color .path3 {
+  &:before {
+    content: $jcicon-arrow-right-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-single-down {
+  &:before {
+    content: $jcicon-arrow-single-down; 
+  }
+}
+.jcicon-arrow-single-left {
+  &:before {
+    content: $jcicon-arrow-single-left; 
+  }
+}
+.jcicon-arrow-single-right {
+  &:before {
+    content: $jcicon-arrow-single-right; 
+  }
+}
+.jcicon-arrow-single-up {
+  &:before {
+    content: $jcicon-arrow-single-up; 
+  }
+}
+.jcicon-arrow-up {
+  &:before {
+    content: $jcicon-arrow-up; 
+  }
+}
+.jcicon-arrow-up-circle {
+  &:before {
+    content: $jcicon-arrow-up-circle; 
+  }
+}
+.jcicon-arrow-up-circle-color .path1 {
+  &:before {
+    content: $jcicon-arrow-up-circle-color-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-arrow-up-circle-color .path2 {
+  &:before {
+    content: $jcicon-arrow-up-circle-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-up-circle-color .path3 {
+  &:before {
+    content: $jcicon-arrow-up-circle-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-up-circle-color .path4 {
+  &:before {
+    content: $jcicon-arrow-up-circle-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-up-color .path1 {
+  &:before {
+    content: $jcicon-arrow-up-color-path1;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-arrow-up-color .path2 {
+  &:before {
+    content: $jcicon-arrow-up-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-arrow-up-color .path3 {
+  &:before {
+    content: $jcicon-arrow-up-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-ban {
+  &:before {
+    content: $jcicon-ban; 
+  }
+}
+.jcicon-ban-color .path1 {
+  &:before {
+    content: $jcicon-ban-color-path1;  
+    color: rgb(255, 222, 0);
+  }
+}
+.jcicon-ban-color .path2 {
+  &:before {
+    content: $jcicon-ban-color-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 0, 0);
+  }
+}
+.jcicon-ban-color .path3 {
+  &:before {
+    content: $jcicon-ban-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-books {
+  &:before {
+    content: $jcicon-books; 
+  }
+}
+.jcicon-books-color .path1 {
+  &:before {
+    content: $jcicon-books-color-path1;  
+    color: rgb(146, 57, 49);
+  }
+}
+.jcicon-books-color .path2 {
+  &:before {
+    content: $jcicon-books-color-path2;  
+    margin-left: -1em;  
+    color: rgb(146, 57, 49);
+  }
+}
+.jcicon-books-color .path3 {
+  &:before {
+    content: $jcicon-books-color-path3;  
+    margin-left: -1em;  
+    color: rgb(146, 57, 49);
+  }
+}
+.jcicon-books-color .path4 {
+  &:before {
+    content: $jcicon-books-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-books-color .path5 {
+  &:before {
+    content: $jcicon-books-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-books-color .path6 {
+  &:before {
+    content: $jcicon-books-color-path6;  
+    margin-left: -1em;  
+    color: rgb(170, 136, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-books-color .path7 {
+  &:before {
+    content: $jcicon-books-color-path7;  
+    margin-left: -1em;  
+    color: rgb(223, 107, 96);  
+    opacity: 0.817;
+  }
+}
+.jcicon-books-color .path8 {
+  &:before {
+    content: $jcicon-books-color-path8;  
+    margin-left: -1em;  
+    color: rgb(223, 107, 96);  
+    opacity: 0.817;
+  }
+}
+.jcicon-books-color .path9 {
+  &:before {
+    content: $jcicon-books-color-path9;  
+    margin-left: -1em;  
+    color: rgb(32, 88, 103);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-books-color .path10 {
+  &:before {
+    content: $jcicon-books-color-path10;  
+    margin-left: -1em;  
+    color: rgb(32, 88, 103);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-caculate {
+  &:before {
+    content: $jcicon-caculate; 
+  }
+}
+.jcicon-camera .path1 {
+  &:before {
+    content: $jcicon-camera-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-camera .path2 {
+  &:before {
+    content: $jcicon-camera-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-camera .path3 {
+  &:before {
+    content: $jcicon-camera-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-camera .path4 {
+  &:before {
+    content: $jcicon-camera-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-camera .path5 {
+  &:before {
+    content: $jcicon-camera-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-camera .path6 {
+  &:before {
+    content: $jcicon-camera-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-camera .path7 {
+  &:before {
+    content: $jcicon-camera-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-camera .path8 {
+  &:before {
+    content: $jcicon-camera-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-camera .path9 {
+  &:before {
+    content: $jcicon-camera-path9;  
+    margin-left: -1em;  
+    color: rgb(34, 142, 142);
+  }
+}
+.jcicon-close-circle {
+  &:before {
+    content: $jcicon-close-circle; 
+  }
+}
+.jcicon-close-circle-color .path1 {
+  &:before {
+    content: $jcicon-close-circle-color-path1;  
+    color: rgb(255, 227, 0);
+  }
+}
+.jcicon-close-circle-color .path2 {
+  &:before {
+    content: $jcicon-close-circle-color-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 0, 0);
+  }
+}
+.jcicon-close-circle-color .path3 {
+  &:before {
+    content: $jcicon-close-circle-color-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 0, 0);
+  }
+}
+.jcicon-close-circle-color .path4 {
+  &:before {
+    content: $jcicon-close-circle-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-code {
+  &:before {
+    content: $jcicon-code; 
+  }
+}
+.jcicon-code-color .path1 {
+  &:before {
+    content: $jcicon-code-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-code-color .path2 {
+  &:before {
+    content: $jcicon-code-color-path2;  
+    margin-left: -1em;  
+    color: rgb(2, 2, 2);
+  }
+}
+.jcicon-collapse-down {
+  &:before {
+    content: $jcicon-collapse-down; 
+  }
+}
+.jcicon-collapse-down-color .path1 {
+  &:before {
+    content: $jcicon-collapse-down-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-collapse-down-color .path2 {
+  &:before {
+    content: $jcicon-collapse-down-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-collapse-down-color .path3 {
+  &:before {
+    content: $jcicon-collapse-down-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-collapse-down-color .path4 {
+  &:before {
+    content: $jcicon-collapse-down-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-collapse-up {
+  &:before {
+    content: $jcicon-collapse-up; 
+  }
+}
+.jcicon-collapse-up-color .path1 {
+  &:before {
+    content: $jcicon-collapse-up-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-collapse-up-color .path2 {
+  &:before {
+    content: $jcicon-collapse-up-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-collapse-up-color .path3 {
+  &:before {
+    content: $jcicon-collapse-up-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-collapse-up-color .path4 {
+  &:before {
+    content: $jcicon-collapse-up-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-cumputer {
+  &:before {
+    content: $jcicon-cumputer; 
+  }
+}
+.jcicon-cumputer-color .path1 {
+  &:before {
+    content: $jcicon-cumputer-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-cumputer-color .path2 {
+  &:before {
+    content: $jcicon-cumputer-color-path2;  
+    margin-left: -1em;  
+    color: rgb(128, 128, 0);
+  }
+}
+.jcicon-cumputer-color .path3 {
+  &:before {
+    content: $jcicon-cumputer-color-path3;  
+    margin-left: -1em;  
+    color: rgb(128, 0, 128);
+  }
+}
+.jcicon-day-moon .path1 {
+  &:before {
+    content: $jcicon-day-moon-path1;  
+    color: rgb(0, 0, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-day-moon .path2 {
+  &:before {
+    content: $jcicon-day-moon-path2;  
+    margin-left: -1em;  
+    color: rgb(13, 0, 38);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-day-moon-color .path1 {
+  &:before {
+    content: $jcicon-day-moon-color-path1;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-day-moon-color .path2 {
+  &:before {
+    content: $jcicon-day-moon-color-path2;  
+    margin-left: -1em;  
+    color: rgb(13, 0, 38);
+  }
+}
+.jcicon-day-sun {
+  &:before {
+    content: $jcicon-day-sun; 
+  }
+}
+.jcicon-day-sun-color .path1 {
+  &:before {
+    content: $jcicon-day-sun-color-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-day-sun-color .path2 {
+  &:before {
+    content: $jcicon-day-sun-color-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-day-sun-color .path3 {
+  &:before {
+    content: $jcicon-day-sun-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-day-sun-color .path4 {
+  &:before {
+    content: $jcicon-day-sun-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-day-sun-color .path5 {
+  &:before {
+    content: $jcicon-day-sun-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-day-sun-color .path6 {
+  &:before {
+    content: $jcicon-day-sun-color-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-day-sun-color .path7 {
+  &:before {
+    content: $jcicon-day-sun-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-day-sun-color .path8 {
+  &:before {
+    content: $jcicon-day-sun-color-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-day-sun-color .path9 {
+  &:before {
+    content: $jcicon-day-sun-color-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-day-sun-color .path10 {
+  &:before {
+    content: $jcicon-day-sun-color-path10;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-demonstrate {
+  &:before {
+    content: $jcicon-demonstrate; 
+  }
+}
+.jcicon-demonstrate-color .path1 {
+  &:before {
+    content: $jcicon-demonstrate-color-path1;  
+    color: rgb(45, 182, 236);
+  }
+}
+.jcicon-demonstrate-color .path2 {
+  &:before {
+    content: $jcicon-demonstrate-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 0);
+  }
+}
+.jcicon-demonstrate-color .path3 {
+  &:before {
+    content: $jcicon-demonstrate-color-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 102, 0);
+  }
+}
+.jcicon-demonstrate-color .path4 {
+  &:before {
+    content: $jcicon-demonstrate-color-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 102, 0);
+  }
+}
+.jcicon-demonstrate-color .path5 {
+  &:before {
+    content: $jcicon-demonstrate-color-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 102, 0);
+  }
+}
+.jcicon-demonstrate-v2 {
+  &:before {
+    content: $jcicon-demonstrate-v2; 
+  }
+}
+.jcicon-demonstrate-v2-color .path1 {
+  &:before {
+    content: $jcicon-demonstrate-v2-color-path1;  
+    color: rgb(255, 42, 42);
+  }
+}
+.jcicon-demonstrate-v2-color .path2 {
+  &:before {
+    content: $jcicon-demonstrate-v2-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-demonstrate-v2-color .path3 {
+  &:before {
+    content: $jcicon-demonstrate-v2-color-path3;  
+    margin-left: -1em;  
+    color: rgb(191, 144, 0);
+  }
+}
+.jcicon-demonstrate-v2-color .path4 {
+  &:before {
+    content: $jcicon-demonstrate-v2-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 112, 192);
+  }
+}
+.jcicon-demonstrate-v2-color .path5 {
+  &:before {
+    content: $jcicon-demonstrate-v2-color-path5;  
+    margin-left: -1em;  
+    color: rgb(126, 100, 158);
+  }
+}
+.jcicon-demonstrate-v2-color .path6 {
+  &:before {
+    content: $jcicon-demonstrate-v2-color-path6;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-demonstrate-v2-color .path7 {
+  &:before {
+    content: $jcicon-demonstrate-v2-color-path7;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-download {
+  &:before {
+    content: $jcicon-download; 
+  }
+}
+.jcicon-download-color .path1 {
+  &:before {
+    content: $jcicon-download-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-download-color .path2 {
+  &:before {
+    content: $jcicon-download-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-download-color .path3 {
+  &:before {
+    content: $jcicon-download-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-download-color .path4 {
+  &:before {
+    content: $jcicon-download-color-path4;  
+    margin-left: -1em;  
+    color: rgb(219, 132, 0);
+  }
+}
+.jcicon-download-color .path5 {
+  &:before {
+    content: $jcicon-download-color-path5;  
+    margin-left: -1em;  
+    color: rgb(219, 132, 0);
+  }
+}
+.jcicon-download-color .path6 {
+  &:before {
+    content: $jcicon-download-color-path6;  
+    margin-left: -1em;  
+    color: rgb(219, 132, 0);
+  }
+}
+.jcicon-download-color .path7 {
+  &:before {
+    content: $jcicon-download-color-path7;  
+    margin-left: -1em;  
+    color: rgb(219, 132, 0);
+  }
+}
+.jcicon-download-color .path8 {
+  &:before {
+    content: $jcicon-download-color-path8;  
+    margin-left: -1em;  
+    color: rgb(219, 132, 0);
+  }
+}
+.jcicon-draft {
+  &:before {
+    content: $jcicon-draft; 
+  }
+}
+.jcicon-draft-color .path1 {
+  &:before {
+    content: $jcicon-draft-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-draft-color .path2 {
+  &:before {
+    content: $jcicon-draft-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-draft-color .path3 {
+  &:before {
+    content: $jcicon-draft-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-draft-color .path4 {
+  &:before {
+    content: $jcicon-draft-color-path4;  
+    margin-left: -1em;  
+    color: rgb(80, 45, 22);
+  }
+}
+.jcicon-draft-color .path5 {
+  &:before {
+    content: $jcicon-draft-color-path5;  
+    margin-left: -1em;  
+    color: rgb(80, 45, 22);
+  }
+}
+.jcicon-draft-color .path6 {
+  &:before {
+    content: $jcicon-draft-color-path6;  
+    margin-left: -1em;  
+    color: rgb(80, 45, 22);
+  }
+}
+.jcicon-draft-color .path7 {
+  &:before {
+    content: $jcicon-draft-color-path7;  
+    margin-left: -1em;  
+    color: rgb(80, 45, 22);
+  }
+}
+.jcicon-draft-color .path8 {
+  &:before {
+    content: $jcicon-draft-color-path8;  
+    margin-left: -1em;  
+    color: rgb(80, 45, 22);
+  }
+}
+.jcicon-draft-color .path9 {
+  &:before {
+    content: $jcicon-draft-color-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-draft-color .path10 {
+  &:before {
+    content: $jcicon-draft-color-path10;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-draft-color .path11 {
+  &:before {
+    content: $jcicon-draft-color-path11;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-draft-color .path12 {
+  &:before {
+    content: $jcicon-draft-color-path12;  
+    margin-left: -1em;  
+    color: rgb(80, 45, 22);
+  }
+}
+.jcicon-draft-color .path13 {
+  &:before {
+    content: $jcicon-draft-color-path13;  
+    margin-left: -1em;  
+    color: rgb(80, 45, 22);
+  }
+}
+.jcicon-drawing {
+  &:before {
+    content: $jcicon-drawing; 
+  }
+}
+.jcicon-drawing-color .path1 {
+  &:before {
+    content: $jcicon-drawing-color-path1;  
+    color: rgb(75, 172, 198);
+  }
+}
+.jcicon-drawing-color .path2 {
+  &:before {
+    content: $jcicon-drawing-color-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-drawing-color .path3 {
+  &:before {
+    content: $jcicon-drawing-color-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-drawing-color .path4 {
+  &:before {
+    content: $jcicon-drawing-color-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 0, 0);
+  }
+}
+.jcicon-drawing-color .path5 {
+  &:before {
+    content: $jcicon-drawing-color-path5;  
+    margin-left: -1em;  
+    color: rgb(244, 125, 155);
+  }
+}
+.jcicon-drawing-color .path6 {
+  &:before {
+    content: $jcicon-drawing-color-path6;  
+    margin-left: -1em;  
+    color: rgb(112, 48, 160);
+  }
+}
+.jcicon-drawing-color .path7 {
+  &:before {
+    content: $jcicon-drawing-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 176, 80);
+  }
+}
+.jcicon-drawing-color .path8 {
+  &:before {
+    content: $jcicon-drawing-color-path8;  
+    margin-left: -1em;  
+    color: rgb(102, 213, 255);
+  }
+}
+.jcicon-drawing-color .path9 {
+  &:before {
+    content: $jcicon-drawing-color-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 112, 192);
+  }
+}
+.jcicon-drawing-color .path10 {
+  &:before {
+    content: $jcicon-drawing-color-path10;  
+    margin-left: -1em;  
+    color: rgb(218, 179, 127);
+  }
+}
+.jcicon-drawing-color .path11 {
+  &:before {
+    content: $jcicon-drawing-color-path11;  
+    margin-left: -1em;  
+    color: rgb(112, 92, 54);
+  }
+}
+.jcicon-drawing-color .path12 {
+  &:before {
+    content: $jcicon-drawing-color-path12;  
+    margin-left: -1em;  
+    color: rgb(249, 238, 219);
+  }
+}
+.jcicon-email {
+  &:before {
+    content: $jcicon-email; 
+  }
+}
+.jcicon-email-color .path1 {
+  &:before {
+    content: $jcicon-email-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-email-color .path2 {
+  &:before {
+    content: $jcicon-email-color-path2;  
+    margin-left: -1em;  
+    color: rgb(99, 24, 0);
+  }
+}
+.jcicon-email-color .path3 {
+  &:before {
+    content: $jcicon-email-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-email-color .path4 {
+  &:before {
+    content: $jcicon-email-color-path4;  
+    margin-left: -1em;  
+    color: rgb(99, 24, 0);
+  }
+}
+.jcicon-email-color .path5 {
+  &:before {
+    content: $jcicon-email-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-email-color .path6 {
+  &:before {
+    content: $jcicon-email-color-path6;  
+    margin-left: -1em;  
+    color: rgb(99, 24, 0);
+  }
+}
+.jcicon-email-color .path7 {
+  &:before {
+    content: $jcicon-email-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-email-color .path8 {
+  &:before {
+    content: $jcicon-email-color-path8;  
+    margin-left: -1em;  
+    color: rgb(99, 24, 0);
+  }
+}
+.jcicon-email-color .path9 {
+  &:before {
+    content: $jcicon-email-color-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-email-color .path10 {
+  &:before {
+    content: $jcicon-email-color-path10;  
+    margin-left: -1em;  
+    color: rgb(99, 24, 0);
+  }
+}
+.jcicon-email-color .path11 {
+  &:before {
+    content: $jcicon-email-color-path11;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-eraser .path1 {
+  &:before {
+    content: $jcicon-eraser-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-eraser .path2 {
+  &:before {
+    content: $jcicon-eraser-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-eraser .path3 {
+  &:before {
+    content: $jcicon-eraser-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-eraser .path4 {
+  &:before {
+    content: $jcicon-eraser-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-eraser .path5 {
+  &:before {
+    content: $jcicon-eraser-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-eraser-color .path1 {
+  &:before {
+    content: $jcicon-eraser-color-path1;  
+    color: rgb(127, 96, 0);
+  }
+}
+.jcicon-eraser-color .path2 {
+  &:before {
+    content: $jcicon-eraser-color-path2;  
+    margin-left: -1em;  
+    color: rgb(219, 238, 243);
+  }
+}
+.jcicon-eraser-color .path3 {
+  &:before {
+    content: $jcicon-eraser-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-eraser-color .path4 {
+  &:before {
+    content: $jcicon-eraser-color-path4;  
+    margin-left: -1em;  
+    color: rgb(217, 149, 143);
+  }
+}
+.jcicon-eraser-color .path5 {
+  &:before {
+    content: $jcicon-eraser-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-eyes-close {
+  &:before {
+    content: $jcicon-eyes-close; 
+  }
+}
+.jcicon-eyes-close-color .path1 {
+  &:before {
+    content: $jcicon-eyes-close-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-eyes-close-color .path2 {
+  &:before {
+    content: $jcicon-eyes-close-color-path2;  
+    margin-left: -1em;  
+    color: rgb(85, 68, 0);
+  }
+}
+.jcicon-eyes-close-color .path3 {
+  &:before {
+    content: $jcicon-eyes-close-color-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 0, 0);
+  }
+}
+.jcicon-eyes-open {
+  &:before {
+    content: $jcicon-eyes-open; 
+  }
+}
+.jcicon-eyes-open-color .path1 {
+  &:before {
+    content: $jcicon-eyes-open-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-eyes-open-color .path2 {
+  &:before {
+    content: $jcicon-eyes-open-color-path2;  
+    margin-left: -1em;  
+    color: rgb(85, 68, 0);
+  }
+}
+.jcicon-file {
+  &:before {
+    content: $jcicon-file; 
+  }
+}
+.jcicon-file-color .path1 {
+  &:before {
+    content: $jcicon-file-color-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-color .path2 {
+  &:before {
+    content: $jcicon-file-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-color .path3 {
+  &:before {
+    content: $jcicon-file-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-color .path4 {
+  &:before {
+    content: $jcicon-file-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-color .path5 {
+  &:before {
+    content: $jcicon-file-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-color .path6 {
+  &:before {
+    content: $jcicon-file-color-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-color .path7 {
+  &:before {
+    content: $jcicon-file-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-color .path8 {
+  &:before {
+    content: $jcicon-file-color-path8;  
+    margin-left: -1em;  
+    color: rgb(153, 153, 153);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-file-excel {
+  &:before {
+    content: $jcicon-file-excel; 
+  }
+}
+.jcicon-file-excel-color .path1 {
+  &:before {
+    content: $jcicon-file-excel-color-path1;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-excel-color .path2 {
+  &:before {
+    content: $jcicon-file-excel-color-path2;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-excel-color .path3 {
+  &:before {
+    content: $jcicon-file-excel-color-path3;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-excel-color .path4 {
+  &:before {
+    content: $jcicon-file-excel-color-path4;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-excel-color .path5 {
+  &:before {
+    content: $jcicon-file-excel-color-path5;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-excel-color .path6 {
+  &:before {
+    content: $jcicon-file-excel-color-path6;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-excel-color .path7 {
+  &:before {
+    content: $jcicon-file-excel-color-path7;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-excel-color .path8 {
+  &:before {
+    content: $jcicon-file-excel-color-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 0);
+  }
+}
+.jcicon-file-excel-color .path9 {
+  &:before {
+    content: $jcicon-file-excel-color-path9;  
+    margin-left: -1em;  
+    color: rgb(212, 170, 0);
+  }
+}
+.jcicon-file-json {
+  &:before {
+    content: $jcicon-file-json; 
+  }
+}
+.jcicon-file-json-color .path1 {
+  &:before {
+    content: $jcicon-file-json-color-path1;  
+    color: rgb(128, 102, 0);
+  }
+}
+.jcicon-file-json-color .path2 {
+  &:before {
+    content: $jcicon-file-json-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-json-color .path3 {
+  &:before {
+    content: $jcicon-file-json-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-json-color .path4 {
+  &:before {
+    content: $jcicon-file-json-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-json-color .path5 {
+  &:before {
+    content: $jcicon-file-json-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-json-color .path6 {
+  &:before {
+    content: $jcicon-file-json-color-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-json-color .path7 {
+  &:before {
+    content: $jcicon-file-json-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-json-color .path8 {
+  &:before {
+    content: $jcicon-file-json-color-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-json-color .path9 {
+  &:before {
+    content: $jcicon-file-json-color-path9;  
+    margin-left: -1em;  
+    color: rgb(153, 153, 153);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-file-markdown-color .path1 {
+  &:before {
+    content: $jcicon-file-markdown-color-path1;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-markdown-color .path2 {
+  &:before {
+    content: $jcicon-file-markdown-color-path2;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-markdown-color .path3 {
+  &:before {
+    content: $jcicon-file-markdown-color-path3;  
+    margin-left: -1em;  
+    color: rgb(73, 172, 245);
+  }
+}
+.jcicon-file-markdown-color .path4 {
+  &:before {
+    content: $jcicon-file-markdown-color-path4;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-markdown-color .path5 {
+  &:before {
+    content: $jcicon-file-markdown-color-path5;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-markdown-color .path6 {
+  &:before {
+    content: $jcicon-file-markdown-color-path6;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-markdown-color .path7 {
+  &:before {
+    content: $jcicon-file-markdown-color-path7;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-markdown-color .path8 {
+  &:before {
+    content: $jcicon-file-markdown-color-path8;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-markdown-color .path9 {
+  &:before {
+    content: $jcicon-file-markdown-color-path9;  
+    margin-left: -1em;  
+    color: rgb(73, 172, 245);
+  }
+}
+.jcicon-file-markdown-color .path10 {
+  &:before {
+    content: $jcicon-file-markdown-color-path10;  
+    margin-left: -1em;  
+    color: rgb(73, 172, 245);
+  }
+}
+.jcicon-file-markdown-color .path11 {
+  &:before {
+    content: $jcicon-file-markdown-color-path11;  
+    margin-left: -1em;  
+    color: rgb(73, 172, 245);
+  }
+}
+.jcicon-file-markdown-color .path12 {
+  &:before {
+    content: $jcicon-file-markdown-color-path12;  
+    margin-left: -1em;  
+    color: rgb(73, 172, 245);
+  }
+}
+.jcicon-file-markdown-color .path13 {
+  &:before {
+    content: $jcicon-file-markdown-color-path13;  
+    margin-left: -1em;  
+    color: rgb(153, 153, 153);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-file-markdown-color .path14 {
+  &:before {
+    content: $jcicon-file-markdown-color-path14;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-file-markdown-color .path15 {
+  &:before {
+    content: $jcicon-file-markdown-color-path15;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-file-markdown-color .path16 {
+  &:before {
+    content: $jcicon-file-markdown-color-path16;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-pdf {
+  &:before {
+    content: $jcicon-file-pdf; 
+  }
+}
+.jcicon-file-pdf-color .path1 {
+  &:before {
+    content: $jcicon-file-pdf-color-path1;  
+    color: rgb(255, 0, 0);
+  }
+}
+.jcicon-file-pdf-color .path2 {
+  &:before {
+    content: $jcicon-file-pdf-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-pdf-color .path3 {
+  &:before {
+    content: $jcicon-file-pdf-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-pdf-color .path4 {
+  &:before {
+    content: $jcicon-file-pdf-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-pdf-color .path5 {
+  &:before {
+    content: $jcicon-file-pdf-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-pdf-color .path6 {
+  &:before {
+    content: $jcicon-file-pdf-color-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-pdf-color .path7 {
+  &:before {
+    content: $jcicon-file-pdf-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-pdf-color .path8 {
+  &:before {
+    content: $jcicon-file-pdf-color-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-pdf-color .path9 {
+  &:before {
+    content: $jcicon-file-pdf-color-path9;  
+    margin-left: -1em;  
+    color: rgb(153, 153, 153);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-file-ppt {
+  &:before {
+    content: $jcicon-file-ppt; 
+  }
+}
+.jcicon-file-ppt-color .path1 {
+  &:before {
+    content: $jcicon-file-ppt-color-path1;  
+    color: rgb(212, 0, 0);
+  }
+}
+.jcicon-file-ppt-color .path2 {
+  &:before {
+    content: $jcicon-file-ppt-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-ppt-color .path3 {
+  &:before {
+    content: $jcicon-file-ppt-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-ppt-color .path4 {
+  &:before {
+    content: $jcicon-file-ppt-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-ppt-color .path5 {
+  &:before {
+    content: $jcicon-file-ppt-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-ppt-color .path6 {
+  &:before {
+    content: $jcicon-file-ppt-color-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-ppt-color .path7 {
+  &:before {
+    content: $jcicon-file-ppt-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-ppt-color .path8 {
+  &:before {
+    content: $jcicon-file-ppt-color-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-ppt-color .path9 {
+  &:before {
+    content: $jcicon-file-ppt-color-path9;  
+    margin-left: -1em;  
+    color: rgb(153, 153, 153);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-file-temporary {
+  &:before {
+    content: $jcicon-file-temporary; 
+  }
+}
+.jcicon-file-temporary-color .path1 {
+  &:before {
+    content: $jcicon-file-temporary-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-file-temporary-color .path2 {
+  &:before {
+    content: $jcicon-file-temporary-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-file-temporary-color .path3 {
+  &:before {
+    content: $jcicon-file-temporary-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-file-temporary-color .path4 {
+  &:before {
+    content: $jcicon-file-temporary-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-temporary-color .path5 {
+  &:before {
+    content: $jcicon-file-temporary-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-temporary-color .path6 {
+  &:before {
+    content: $jcicon-file-temporary-color-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-temporary-color .path7 {
+  &:before {
+    content: $jcicon-file-temporary-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-temporary-color .path8 {
+  &:before {
+    content: $jcicon-file-temporary-color-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-temporary-color .path9 {
+  &:before {
+    content: $jcicon-file-temporary-color-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-temporary-color .path10 {
+  &:before {
+    content: $jcicon-file-temporary-color-path10;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-temporary-color .path11 {
+  &:before {
+    content: $jcicon-file-temporary-color-path11;  
+    margin-left: -1em;  
+    color: rgb(211, 178, 72);
+  }
+}
+.jcicon-file-temporary-color .path12 {
+  &:before {
+    content: $jcicon-file-temporary-color-path12;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-temporary-color .path13 {
+  &:before {
+    content: $jcicon-file-temporary-color-path13;  
+    margin-left: -1em;  
+    color: rgb(211, 178, 72);
+  }
+}
+.jcicon-file-temporary-color .path14 {
+  &:before {
+    content: $jcicon-file-temporary-color-path14;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-temporary-color .path15 {
+  &:before {
+    content: $jcicon-file-temporary-color-path15;  
+    margin-left: -1em;  
+    color: rgb(211, 178, 72);
+  }
+}
+.jcicon-file-temporary-color .path16 {
+  &:before {
+    content: $jcicon-file-temporary-color-path16;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-temporary-color .path17 {
+  &:before {
+    content: $jcicon-file-temporary-color-path17;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-file-temporary-color .path18 {
+  &:before {
+    content: $jcicon-file-temporary-color-path18;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-file-text {
+  &:before {
+    content: $jcicon-file-text; 
+  }
+}
+.jcicon-file-text-color .path1 {
+  &:before {
+    content: $jcicon-file-text-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-file-text-color .path2 {
+  &:before {
+    content: $jcicon-file-text-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-file-text-color .path3 {
+  &:before {
+    content: $jcicon-file-text-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-file-text-color .path4 {
+  &:before {
+    content: $jcicon-file-text-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-file-text-color .path5 {
+  &:before {
+    content: $jcicon-file-text-color-path5;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-text-color .path6 {
+  &:before {
+    content: $jcicon-file-text-color-path6;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-text-color .path7 {
+  &:before {
+    content: $jcicon-file-text-color-path7;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-text-color .path8 {
+  &:before {
+    content: $jcicon-file-text-color-path8;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-text-color .path9 {
+  &:before {
+    content: $jcicon-file-text-color-path9;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-text-color .path10 {
+  &:before {
+    content: $jcicon-file-text-color-path10;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-text-color .path11 {
+  &:before {
+    content: $jcicon-file-text-color-path11;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-text-color .path12 {
+  &:before {
+    content: $jcicon-file-text-color-path12;  
+    margin-left: -1em;  
+    color: rgb(255, 230, 128);
+  }
+}
+.jcicon-file-word {
+  &:before {
+    content: $jcicon-file-word; 
+  }
+}
+.jcicon-file-word-color .path1 {
+  &:before {
+    content: $jcicon-file-word-color-path1;  
+    color: rgb(77, 114, 255);
+  }
+}
+.jcicon-file-word-color .path2 {
+  &:before {
+    content: $jcicon-file-word-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-word-color .path3 {
+  &:before {
+    content: $jcicon-file-word-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-word-color .path4 {
+  &:before {
+    content: $jcicon-file-word-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-word-color .path5 {
+  &:before {
+    content: $jcicon-file-word-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-word-color .path6 {
+  &:before {
+    content: $jcicon-file-word-color-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-word-color .path7 {
+  &:before {
+    content: $jcicon-file-word-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-word-color .path8 {
+  &:before {
+    content: $jcicon-file-word-color-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-file-word-color .path9 {
+  &:before {
+    content: $jcicon-file-word-color-path9;  
+    margin-left: -1em;  
+    color: rgb(153, 153, 153);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-file-xlmd {
+  &:before {
+    content: $jcicon-file-xlmd; 
+  }
+}
+.jcicon-file-xlmd-color .path1 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path1;  
+    color: rgb(70, 114, 196);
+  }
+}
+.jcicon-file-xlmd-color .path2 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path2;  
+    margin-left: -1em;  
+    color: rgb(70, 114, 196);
+  }
+}
+.jcicon-file-xlmd-color .path3 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path3;  
+    margin-left: -1em;  
+    color: rgb(70, 114, 196);
+  }
+}
+.jcicon-file-xlmd-color .path4 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path4;  
+    margin-left: -1em;  
+    color: rgb(70, 114, 196);
+  }
+}
+.jcicon-file-xlmd-color .path5 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path5;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-xlmd-color .path6 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path6;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-xlmd-color .path7 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path7;  
+    margin-left: -1em;  
+    color: rgb(73, 172, 245);
+  }
+}
+.jcicon-file-xlmd-color .path8 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path8;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-xlmd-color .path9 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path9;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-xlmd-color .path10 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path10;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-xlmd-color .path11 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path11;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-xlmd-color .path12 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path12;  
+    margin-left: -1em;  
+    color: rgb(70, 70, 70);
+  }
+}
+.jcicon-file-xlmd-color .path13 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path13;  
+    margin-left: -1em;  
+    color: rgb(73, 172, 245);
+  }
+}
+.jcicon-file-xlmd-color .path14 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path14;  
+    margin-left: -1em;  
+    color: rgb(73, 172, 245);
+  }
+}
+.jcicon-file-xlmd-color .path15 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path15;  
+    margin-left: -1em;  
+    color: rgb(73, 172, 245);
+  }
+}
+.jcicon-file-xlmd-color .path16 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path16;  
+    margin-left: -1em;  
+    color: rgb(73, 172, 245);
+  }
+}
+.jcicon-file-xlmd-color .path17 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path17;  
+    margin-left: -1em;  
+    color: rgb(153, 153, 153);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-file-xlmd-color .path18 {
+  &:before {
+    content: $jcicon-file-xlmd-color-path18;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-folder {
+  &:before {
+    content: $jcicon-folder; 
+  }
+}
+.jcicon-folder-favorites {
+  &:before {
+    content: $jcicon-folder-favorites; 
+  }
+}
+.jcicon-folder-favorites-color .path1 {
+  &:before {
+    content: $jcicon-folder-favorites-color-path1;  
+    color: rgb(255, 204, 65);
+  }
+}
+.jcicon-folder-favorites-color .path2 {
+  &:before {
+    content: $jcicon-folder-favorites-color-path2;  
+    margin-left: -1em;  
+    color: rgb(58, 68, 83);
+  }
+}
+.jcicon-folder-favorites-color .path3 {
+  &:before {
+    content: $jcicon-folder-favorites-color-path3;  
+    margin-left: -1em;  
+    color: rgb(107, 204, 28);
+  }
+}
+.jcicon-folder-favorites-color .path4 {
+  &:before {
+    content: $jcicon-folder-favorites-color-path4;  
+    margin-left: -1em;  
+    color: rgb(79, 202, 135);
+  }
+}
+.jcicon-folder-fill {
+  &:before {
+    content: $jcicon-folder-fill;     
+    color: #ffcc41;
+  }
+}
+.jcicon-folder-open .path1 {
+  &:before {
+    content: $jcicon-folder-open-path1;  
+    color: rgb(255, 204, 65);
+  }
+}
+.jcicon-folder-open .path2 {
+  &:before {
+    content: $jcicon-folder-open-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 204, 65);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-folder-open .path3 {
+  &:before {
+    content: $jcicon-folder-open-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 204, 65);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-goback {
+  &:before {
+    content: $jcicon-goback; 
+  }
+}
+.jcicon-goforward {
+  &:before {
+    content: $jcicon-goforward; 
+  }
+}
+.jcicon-hand-bad {
+  &:before {
+    content: $jcicon-hand-bad; 
+  }
+}
+.jcicon-hand-bad-color .path1 {
+  &:before {
+    content: $jcicon-hand-bad-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-hand-bad-color .path2 {
+  &:before {
+    content: $jcicon-hand-bad-color-path2;  
+    margin-left: -1em;  
+    color: rgb(26, 26, 26);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-hand-good {
+  &:before {
+    content: $jcicon-hand-good; 
+  }
+}
+.jcicon-hand-good-color .path1 {
+  &:before {
+    content: $jcicon-hand-good-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-hand-good-color .path2 {
+  &:before {
+    content: $jcicon-hand-good-color-path2;  
+    margin-left: -1em;  
+    color: rgb(26, 26, 26);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-heart {
+  &:before {
+    content: $jcicon-heart; 
+  }
+}
+.jcicon-heart-empty {
+  &:before {
+    content: $jcicon-heart-empty; 
+  }
+}
+.jcicon-heart-half {
+  &:before {
+    content: $jcicon-heart-half; 
+  }
+}
+.jcicon-help {
+  &:before {
+    content: $jcicon-help; 
+  }
+}
+.jcicon-help-circle {
+  &:before {
+    content: $jcicon-help-circle; 
+  }
+}
+.jcicon-help-circle-color .path1 {
+  &:before {
+    content: $jcicon-help-circle-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-help-circle-color .path2 {
+  &:before {
+    content: $jcicon-help-circle-color-path2;  
+    margin-left: -1em;  
+    color: rgb(128, 128, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-help-circle-color .path3 {
+  &:before {
+    content: $jcicon-help-circle-color-path3;  
+    margin-left: -1em;  
+    color: rgb(128, 128, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-help-circle-color .path4 {
+  &:before {
+    content: $jcicon-help-circle-color-path4;  
+    margin-left: -1em;  
+    color: rgb(128, 128, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-help-circle-color .path5 {
+  &:before {
+    content: $jcicon-help-circle-color-path5;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-help-color .path1 {
+  &:before {
+    content: $jcicon-help-color-path1;  
+    color: rgb(128, 128, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-help-color .path2 {
+  &:before {
+    content: $jcicon-help-color-path2;  
+    margin-left: -1em;  
+    color: rgb(34, 142, 142);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-help-color .path3 {
+  &:before {
+    content: $jcicon-help-color-path3;  
+    margin-left: -1em;  
+    color: rgb(34, 142, 142);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-help-color .path4 {
+  &:before {
+    content: $jcicon-help-color-path4;  
+    margin-left: -1em;  
+    color: rgb(34, 142, 142);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-help-color .path5 {
+  &:before {
+    content: $jcicon-help-color-path5;  
+    margin-left: -1em;  
+    color: rgb(34, 142, 142);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-help-outline .path1 {
+  &:before {
+    content: $jcicon-help-outline-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-help-outline .path2 {
+  &:before {
+    content: $jcicon-help-outline-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-help-outline .path3 {
+  &:before {
+    content: $jcicon-help-outline-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-help-outline .path4 {
+  &:before {
+    content: $jcicon-help-outline-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-help-outline .path5 {
+  &:before {
+    content: $jcicon-help-outline-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-help-outline .path6 {
+  &:before {
+    content: $jcicon-help-outline-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-help-outline .path7 {
+  &:before {
+    content: $jcicon-help-outline-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-help-outline .path8 {
+  &:before {
+    content: $jcicon-help-outline-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-help-outline .path9 {
+  &:before {
+    content: $jcicon-help-outline-path9;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-help-outline .path10 {
+  &:before {
+    content: $jcicon-help-outline-path10;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-jcstudio .path1 {
+  &:before {
+    content: $jcicon-jcstudio-path1;  
+    color: rgb(102, 48, 42);
+  }
+}
+.jcicon-jcstudio .path2 {
+  &:before {
+    content: $jcicon-jcstudio-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-jcstudio .path3 {
+  &:before {
+    content: $jcicon-jcstudio-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-jcstudio .path4 {
+  &:before {
+    content: $jcicon-jcstudio-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-jcstudio .path5 {
+  &:before {
+    content: $jcicon-jcstudio-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-jcstudio .path6 {
+  &:before {
+    content: $jcicon-jcstudio-path6;  
+    margin-left: -1em;  
+    color: rgb(217, 163, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-jcstudio .path7 {
+  &:before {
+    content: $jcicon-jcstudio-path7;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-jcstudio .path8 {
+  &:before {
+    content: $jcicon-jcstudio-path8;  
+    margin-left: -1em;  
+    color: rgb(217, 163, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-jcstudio .path9 {
+  &:before {
+    content: $jcicon-jcstudio-path9;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-jcstudio .path10 {
+  &:before {
+    content: $jcicon-jcstudio-path10;  
+    margin-left: -1em;  
+    color: rgb(217, 163, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-jcstudio .path11 {
+  &:before {
+    content: $jcicon-jcstudio-path11;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-jcstudio .path12 {
+  &:before {
+    content: $jcicon-jcstudio-path12;  
+    margin-left: -1em;  
+    color: rgb(217, 163, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-jcstudio .path13 {
+  &:before {
+    content: $jcicon-jcstudio-path13;  
+    margin-left: -1em;  
+    color: rgb(212, 170, 0);
+  }
+}
+.jcicon-jcstudio .path14 {
+  &:before {
+    content: $jcicon-jcstudio-path14;  
+    margin-left: -1em;  
+    color: rgb(217, 163, 0);
+  }
+}
+.jcicon-jcstudio .path15 {
+  &:before {
+    content: $jcicon-jcstudio-path15;  
+    margin-left: -1em;  
+    color: rgb(212, 170, 0);
+  }
+}
+.jcicon-jcstudio .path16 {
+  &:before {
+    content: $jcicon-jcstudio-path16;  
+    margin-left: -1em;  
+    color: rgb(217, 163, 0);
+  }
+}
+.jcicon-jcstudio .path17 {
+  &:before {
+    content: $jcicon-jcstudio-path17;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-jcstudio .path18 {
+  &:before {
+    content: $jcicon-jcstudio-path18;  
+    margin-left: -1em;  
+    color: rgb(217, 163, 0);
+  }
+}
+.jcicon-jcstudio .path19 {
+  &:before {
+    content: $jcicon-jcstudio-path19;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-jcstudio .path20 {
+  &:before {
+    content: $jcicon-jcstudio-path20;  
+    margin-left: -1em;  
+    color: rgb(217, 163, 0);
+  }
+}
+.jcicon-jcstudio .path21 {
+  &:before {
+    content: $jcicon-jcstudio-path21;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio .path22 {
+  &:before {
+    content: $jcicon-jcstudio-path22;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-jcstudio .path23 {
+  &:before {
+    content: $jcicon-jcstudio-path23;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio .path24 {
+  &:before {
+    content: $jcicon-jcstudio-path24;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-jcstudio .path25 {
+  &:before {
+    content: $jcicon-jcstudio-path25;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio .path26 {
+  &:before {
+    content: $jcicon-jcstudio-path26;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-jcstudio .path27 {
+  &:before {
+    content: $jcicon-jcstudio-path27;  
+    margin-left: -1em;  
+    color: rgb(249, 196, 153);
+  }
+}
+.jcicon-jcstudio .path28 {
+  &:before {
+    content: $jcicon-jcstudio-path28;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-jcstudio .path29 {
+  &:before {
+    content: $jcicon-jcstudio-path29;  
+    margin-left: -1em;  
+    color: rgb(249, 196, 153);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-jcstudio .path30 {
+  &:before {
+    content: $jcicon-jcstudio-path30;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-jcstudio-v1-color .path1 {
+  &:before {
+    content: $jcicon-jcstudio-v1-color-path1;  
+    color: rgb(146, 57, 49);
+  }
+}
+.jcicon-jcstudio-v1-color .path2 {
+  &:before {
+    content: $jcicon-jcstudio-v1-color-path2;  
+    margin-left: -1em;  
+    color: rgb(249, 196, 153);
+  }
+}
+.jcicon-jcstudio-v1-color .path3 {
+  &:before {
+    content: $jcicon-jcstudio-v1-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-jcstudio-v1-color .path4 {
+  &:before {
+    content: $jcicon-jcstudio-v1-color-path4;  
+    margin-left: -1em;  
+    color: rgb(49, 133, 155);
+  }
+}
+.jcicon-jcstudio-v1-color .path5 {
+  &:before {
+    content: $jcicon-jcstudio-v1-color-path5;  
+    margin-left: -1em;  
+    color: rgb(49, 133, 155);
+  }
+}
+.jcicon-jcstudio-v1-color .path6 {
+  &:before {
+    content: $jcicon-jcstudio-v1-color-path6;  
+    margin-left: -1em;  
+    color: rgb(49, 133, 155);
+  }
+}
+.jcicon-jcstudio-v1-color .path7 {
+  &:before {
+    content: $jcicon-jcstudio-v1-color-path7;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio-v1-color .path8 {
+  &:before {
+    content: $jcicon-jcstudio-v1-color-path8;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio-v1-color .path9 {
+  &:before {
+    content: $jcicon-jcstudio-v1-color-path9;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio-v1-color .path10 {
+  &:before {
+    content: $jcicon-jcstudio-v1-color-path10;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio-v1-color .path11 {
+  &:before {
+    content: $jcicon-jcstudio-v1-color-path11;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio-v1-color .path12 {
+  &:before {
+    content: $jcicon-jcstudio-v1-color-path12;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio-v1-color .path13 {
+  &:before {
+    content: $jcicon-jcstudio-v1-color-path13;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio-v1-color .path14 {
+  &:before {
+    content: $jcicon-jcstudio-v1-color-path14;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio-v2 .path1 {
+  &:before {
+    content: $jcicon-jcstudio-v2-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-jcstudio-v2 .path2 {
+  &:before {
+    content: $jcicon-jcstudio-v2-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-jcstudio-v2 .path3 {
+  &:before {
+    content: $jcicon-jcstudio-v2-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-jcstudio-v2 .path4 {
+  &:before {
+    content: $jcicon-jcstudio-v2-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-jcstudio-v2 .path5 {
+  &:before {
+    content: $jcicon-jcstudio-v2-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-jcstudio-v2 .path6 {
+  &:before {
+    content: $jcicon-jcstudio-v2-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-jcstudio-v2 .path7 {
+  &:before {
+    content: $jcicon-jcstudio-v2-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-jcstudio-v2 .path8 {
+  &:before {
+    content: $jcicon-jcstudio-v2-path8;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-jcstudio-v2 .path9 {
+  &:before {
+    content: $jcicon-jcstudio-v2-path9;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-jcstudio-v2 .path10 {
+  &:before {
+    content: $jcicon-jcstudio-v2-path10;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-jcstudio-v2 .path11 {
+  &:before {
+    content: $jcicon-jcstudio-v2-path11;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-jcstudio-v2 .path12 {
+  &:before {
+    content: $jcicon-jcstudio-v2-path12;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-jcstudio-v2 .path13 {
+  &:before {
+    content: $jcicon-jcstudio-v2-path13;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-jcstudio-v2 .path14 {
+  &:before {
+    content: $jcicon-jcstudio-v2-path14;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-jcstudio-v2 .path15 {
+  &:before {
+    content: $jcicon-jcstudio-v2-path15;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-jcstudio-v2 .path16 {
+  &:before {
+    content: $jcicon-jcstudio-v2-path16;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-jcstudio-v2-color .path1 {
+  &:before {
+    content: $jcicon-jcstudio-v2-color-path1;  
+    color: rgb(123, 48, 41);
+  }
+}
+.jcicon-jcstudio-v2-color .path2 {
+  &:before {
+    content: $jcicon-jcstudio-v2-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-jcstudio-v2-color .path3 {
+  &:before {
+    content: $jcicon-jcstudio-v2-color-path3;  
+    margin-left: -1em;  
+    color: rgb(249, 196, 153);
+  }
+}
+.jcicon-jcstudio-v2-color .path4 {
+  &:before {
+    content: $jcicon-jcstudio-v2-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-jcstudio-v2-color .path5 {
+  &:before {
+    content: $jcicon-jcstudio-v2-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-jcstudio-v2-color .path6 {
+  &:before {
+    content: $jcicon-jcstudio-v2-color-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-jcstudio-v2-color .path7 {
+  &:before {
+    content: $jcicon-jcstudio-v2-color-path7;  
+    margin-left: -1em;  
+    color: rgb(49, 133, 155);
+  }
+}
+.jcicon-jcstudio-v2-color .path8 {
+  &:before {
+    content: $jcicon-jcstudio-v2-color-path8;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio-v2-color .path9 {
+  &:before {
+    content: $jcicon-jcstudio-v2-color-path9;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio-v2-color .path10 {
+  &:before {
+    content: $jcicon-jcstudio-v2-color-path10;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio-v2-color .path11 {
+  &:before {
+    content: $jcicon-jcstudio-v2-color-path11;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio-v2-color .path12 {
+  &:before {
+    content: $jcicon-jcstudio-v2-color-path12;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio-v2-color .path13 {
+  &:before {
+    content: $jcicon-jcstudio-v2-color-path13;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio-v2-color .path14 {
+  &:before {
+    content: $jcicon-jcstudio-v2-color-path14;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-jcstudio-v2-color .path15 {
+  &:before {
+    content: $jcicon-jcstudio-v2-color-path15;  
+    margin-left: -1em;  
+    color: rgb(255, 192, 0);
+  }
+}
+.jcicon-lang-c {
+  &:before {
+    content: $jcicon-lang-c;     
+    color: #377abc;
+  }
+}
+.jcicon-lang-cpp {
+  &:before {
+    content: $jcicon-lang-cpp;     
+    color: #377abc;
+  }
+}
+.jcicon-lang-csharp {
+  &:before {
+    content: $jcicon-lang-csharp;     
+    color: #377abc;
+  }
+}
+.jcicon-lang-dart .path1 {
+  &:before {
+    content: $jcicon-lang-dart-path1;  
+    color: rgb(102, 195, 250);
+  }
+}
+.jcicon-lang-dart .path2 {
+  &:before {
+    content: $jcicon-lang-dart-path2;  
+    margin-left: -1em;  
+    color: rgb(33, 88, 150);
+  }
+}
+.jcicon-lang-dart .path3 {
+  &:before {
+    content: $jcicon-lang-dart-path3;  
+    margin-left: -1em;  
+    color: rgb(35, 89, 151);
+  }
+}
+.jcicon-lang-dart .path4 {
+  &:before {
+    content: $jcicon-lang-dart-path4;  
+    margin-left: -1em;  
+    color: rgb(88, 182, 240);
+  }
+}
+.jcicon-lang-java .path1 {
+  &:before {
+    content: $jcicon-lang-java-path1;  
+    color: rgb(255, 0, 0);
+  }
+}
+.jcicon-lang-java .path2 {
+  &:before {
+    content: $jcicon-lang-java-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 0, 0);
+  }
+}
+.jcicon-lang-java .path3 {
+  &:before {
+    content: $jcicon-lang-java-path3;  
+    margin-left: -1em;  
+    color: rgb(102, 153, 255);
+  }
+}
+.jcicon-lang-java .path4 {
+  &:before {
+    content: $jcicon-lang-java-path4;  
+    margin-left: -1em;  
+    color: rgb(102, 153, 255);
+  }
+}
+.jcicon-lang-java .path5 {
+  &:before {
+    content: $jcicon-lang-java-path5;  
+    margin-left: -1em;  
+    color: rgb(102, 153, 255);
+  }
+}
+.jcicon-lang-javascript {
+  &:before {
+    content: $jcicon-lang-javascript;     
+    color: #ffca28;
+  }
+}
+.jcicon-lang-julia .path1 {
+  &:before {
+    content: $jcicon-lang-julia-path1;  
+    color: rgb(188, 52, 45);
+  }
+}
+.jcicon-lang-julia .path2 {
+  &:before {
+    content: $jcicon-lang-julia-path2;  
+    margin-left: -1em;  
+    color: rgb(134, 78, 159);
+  }
+}
+.jcicon-lang-julia .path3 {
+  &:before {
+    content: $jcicon-lang-julia-path3;  
+    margin-left: -1em;  
+    color: rgb(50, 138, 34);
+  }
+}
+.jcicon-lang-markdown {
+  &:before {
+    content: $jcicon-lang-markdown; 
+  }
+}
+.jcicon-lang-matlab .path1 {
+  &:before {
+    content: $jcicon-lang-matlab-path1;  
+    color: rgb(78, 161, 216);
+  }
+}
+.jcicon-lang-matlab .path2 {
+  &:before {
+    content: $jcicon-lang-matlab-path2;  
+    margin-left: -1em;  
+    color: rgb(27, 160, 158);
+  }
+}
+.jcicon-lang-matlab .path3 {
+  &:before {
+    content: $jcicon-lang-matlab-path3;  
+    margin-left: -1em;  
+    color: rgb(141, 24, 44);
+  }
+}
+.jcicon-lang-php {
+  &:before {
+    content: $jcicon-lang-php;     
+    color: #7a86b8;
+  }
+}
+.jcicon-lang-powershell {
+  &:before {
+    content: $jcicon-lang-powershell; 
+  }
+}
+.jcicon-lang-python .path1 {
+  &:before {
+    content: $jcicon-lang-python-path1;  
+    color: rgb(51, 112, 161);
+  }
+}
+.jcicon-lang-python .path2 {
+  &:before {
+    content: $jcicon-lang-python-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 213, 63);
+  }
+}
+.jcicon-lang-ruby {
+  &:before {
+    content: $jcicon-lang-ruby;     
+    color: #9a0d03;
+  }
+}
+.jcicon-lang-rust {
+  &:before {
+    content: $jcicon-lang-rust; 
+  }
+}
+.jcicon-lang-swift {
+  &:before {
+    content: $jcicon-lang-swift;     
+    color: #e44d35;
+  }
+}
+.jcicon-lang-typescript {
+  &:before {
+    content: $jcicon-lang-typescript;     
+    color: #377abc;
+  }
+}
+.jcicon-language-toggle {
+  &:before {
+    content: $jcicon-language-toggle; 
+  }
+}
+.jcicon-logo-alipay {
+  &:before {
+    content: $jcicon-logo-alipay;     
+    color: #18a6ff;
+  }
+}
+.jcicon-logo-mijia .path1 {
+  &:before {
+    content: $jcicon-logo-mijia-path1;  
+    color: rgb(33, 202, 143);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-logo-mijia .path2 {
+  &:before {
+    content: $jcicon-logo-mijia-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-logo-mijia .path3 {
+  &:before {
+    content: $jcicon-logo-mijia-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-logo-mijia .path4 {
+  &:before {
+    content: $jcicon-logo-mijia-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-logo-mijia .path5 {
+  &:before {
+    content: $jcicon-logo-mijia-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-logo-qq .path1 {
+  &:before {
+    content: $jcicon-logo-qq-path1;  
+    color: rgb(243, 180, 14);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-logo-qq .path2 {
+  &:before {
+    content: $jcicon-logo-qq-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-logo-qq .path3 {
+  &:before {
+    content: $jcicon-logo-qq-path3;  
+    margin-left: -1em;  
+    color: rgb(234, 33, 35);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-logo-qq .path4 {
+  &:before {
+    content: $jcicon-logo-qq-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-logo-taobao {
+  &:before {
+    content: $jcicon-logo-taobao;     
+    color: #d40000;
+  }
+}
+.jcicon-logo-wechart .path1 {
+  &:before {
+    content: $jcicon-logo-wechart-path1;  
+    color: rgb(145, 145, 145);
+  }
+}
+.jcicon-logo-wechart .path2 {
+  &:before {
+    content: $jcicon-logo-wechart-path2;  
+    margin-left: -1em;  
+    color: rgb(22, 135, 67);
+  }
+}
+.jcicon-logo-wechart .path3 {
+  &:before {
+    content: $jcicon-logo-wechart-path3;  
+    margin-left: -1em;  
+    color: rgb(20, 212, 106);
+  }
+}
+.jcicon-logo-wechart .path4 {
+  &:before {
+    content: $jcicon-logo-wechart-path4;  
+    margin-left: -1em;  
+    color: rgb(233, 233, 233);
+  }
+}
+.jcicon-magazine-daily {
+  &:before {
+    content: $jcicon-magazine-daily;     
+    color: #026fbf;
+  }
+}
+.jcicon-magazine-monthly {
+  &:before {
+    content: $jcicon-magazine-monthly;     
+    color: #e96f0e;
+  }
+}
+.jcicon-magazine-weekly {
+  &:before {
+    content: $jcicon-magazine-weekly;     
+    color: #02af50;
+  }
+}
+.jcicon-magazine-yearly {
+  &:before {
+    content: $jcicon-magazine-yearly;     
+    color: #544269;
+  }
+}
+.jcicon-markdown {
+  &:before {
+    content: $jcicon-markdown; 
+  }
+}
+.jcicon-markdown-color .path1 {
+  &:before {
+    content: $jcicon-markdown-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-markdown-color .path2 {
+  &:before {
+    content: $jcicon-markdown-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-markdown-color .path3 {
+  &:before {
+    content: $jcicon-markdown-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-meetting {
+  &:before {
+    content: $jcicon-meetting; 
+  }
+}
+.jcicon-meetting-color .path1 {
+  &:before {
+    content: $jcicon-meetting-color-path1;  
+    color: rgb(0, 190, 161);
+  }
+}
+.jcicon-meetting-color .path2 {
+  &:before {
+    content: $jcicon-meetting-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 106, 0);
+  }
+}
+.jcicon-meetting-color .path3 {
+  &:before {
+    content: $jcicon-meetting-color-path3;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-meetting-color .path4 {
+  &:before {
+    content: $jcicon-meetting-color-path4;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-meetting-color .path5 {
+  &:before {
+    content: $jcicon-meetting-color-path5;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-meetting-color .path6 {
+  &:before {
+    content: $jcicon-meetting-color-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 48, 0);
+  }
+}
+.jcicon-meme-cool .path1 {
+  &:before {
+    content: $jcicon-meme-cool-path1;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-meme-cool .path2 {
+  &:before {
+    content: $jcicon-meme-cool-path2;  
+    margin-left: -1em;  
+    color: rgb(248, 200, 0);
+  }
+}
+.jcicon-meme-cool .path3 {
+  &:before {
+    content: $jcicon-meme-cool-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-meme-cool .path4 {
+  &:before {
+    content: $jcicon-meme-cool-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-meme-cool .path5 {
+  &:before {
+    content: $jcicon-meme-cool-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-meme-cover-mouth .path1 {
+  &:before {
+    content: $jcicon-meme-cover-mouth-path1;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-meme-cover-mouth .path2 {
+  &:before {
+    content: $jcicon-meme-cover-mouth-path2;  
+    margin-left: -1em;  
+    color: rgb(248, 200, 0);
+  }
+}
+.jcicon-meme-cover-mouth .path3 {
+  &:before {
+    content: $jcicon-meme-cover-mouth-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 11);
+  }
+}
+.jcicon-meme-cover-mouth .path4 {
+  &:before {
+    content: $jcicon-meme-cover-mouth-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 212, 42);
+  }
+}
+.jcicon-meme-cry .path1 {
+  &:before {
+    content: $jcicon-meme-cry-path1;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-meme-cry .path2 {
+  &:before {
+    content: $jcicon-meme-cry-path2;  
+    margin-left: -1em;  
+    color: rgb(248, 200, 0);
+  }
+}
+.jcicon-meme-cry .path3 {
+  &:before {
+    content: $jcicon-meme-cry-path3;  
+    margin-left: -1em;  
+    color: rgb(201, 229, 236);
+  }
+}
+.jcicon-meme-cry .path4 {
+  &:before {
+    content: $jcicon-meme-cry-path4;  
+    margin-left: -1em;  
+    color: rgb(201, 229, 236);
+  }
+}
+.jcicon-meme-cry .path5 {
+  &:before {
+    content: $jcicon-meme-cry-path5;  
+    margin-left: -1em;  
+    color: rgb(110, 184, 174);
+  }
+}
+.jcicon-meme-cry .path6 {
+  &:before {
+    content: $jcicon-meme-cry-path6;  
+    margin-left: -1em;  
+    color: rgb(201, 229, 236);
+  }
+}
+.jcicon-meme-cry .path7 {
+  &:before {
+    content: $jcicon-meme-cry-path7;  
+    margin-left: -1em;  
+    color: rgb(110, 184, 174);
+  }
+}
+.jcicon-meme-cry .path8 {
+  &:before {
+    content: $jcicon-meme-cry-path8;  
+    margin-left: -1em;  
+    color: rgb(201, 229, 236);
+  }
+}
+.jcicon-meme-cry .path9 {
+  &:before {
+    content: $jcicon-meme-cry-path9;  
+    margin-left: -1em;  
+    color: rgb(110, 184, 174);
+  }
+}
+.jcicon-meme-cry .path10 {
+  &:before {
+    content: $jcicon-meme-cry-path10;  
+    margin-left: -1em;  
+    color: rgb(88, 65, 0);
+  }
+}
+.jcicon-meme-difficult .path1 {
+  &:before {
+    content: $jcicon-meme-difficult-path1;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-meme-difficult .path2 {
+  &:before {
+    content: $jcicon-meme-difficult-path2;  
+    margin-left: -1em;  
+    color: rgb(248, 200, 0);
+  }
+}
+.jcicon-meme-difficult .path3 {
+  &:before {
+    content: $jcicon-meme-difficult-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-meme-difficult .path4 {
+  &:before {
+    content: $jcicon-meme-difficult-path4;  
+    margin-left: -1em;  
+    color: rgb(9, 0, 0);
+  }
+}
+.jcicon-meme-difficult .path5 {
+  &:before {
+    content: $jcicon-meme-difficult-path5;  
+    margin-left: -1em;  
+    color: rgb(9, 0, 0);
+  }
+}
+.jcicon-meme-frighten .path1 {
+  &:before {
+    content: $jcicon-meme-frighten-path1;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-meme-frighten .path2 {
+  &:before {
+    content: $jcicon-meme-frighten-path2;  
+    margin-left: -1em;  
+    color: rgb(248, 200, 0);
+  }
+}
+.jcicon-meme-frighten .path3 {
+  &:before {
+    content: $jcicon-meme-frighten-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 26, 16);
+  }
+}
+.jcicon-meme-frighten .path4 {
+  &:before {
+    content: $jcicon-meme-frighten-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 26, 16);
+  }
+}
+.jcicon-meme-frighten .path5 {
+  &:before {
+    content: $jcicon-meme-frighten-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-meme-haha .path1 {
+  &:before {
+    content: $jcicon-meme-haha-path1;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-meme-haha .path2 {
+  &:before {
+    content: $jcicon-meme-haha-path2;  
+    margin-left: -1em;  
+    color: rgb(248, 200, 0);
+  }
+}
+.jcicon-meme-haha .path3 {
+  &:before {
+    content: $jcicon-meme-haha-path3;  
+    margin-left: -1em;  
+    color: rgb(94, 17, 24);
+  }
+}
+.jcicon-meme-haha .path4 {
+  &:before {
+    content: $jcicon-meme-haha-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-meme-haha .path5 {
+  &:before {
+    content: $jcicon-meme-haha-path5;  
+    margin-left: -1em;  
+    color: rgb(101, 56, 20);
+  }
+}
+.jcicon-meme-haha .path6 {
+  &:before {
+    content: $jcicon-meme-haha-path6;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 222);  
+    opacity: 0.9765;
+  }
+}
+.jcicon-meme-haha .path7 {
+  &:before {
+    content: $jcicon-meme-haha-path7;  
+    margin-left: -1em;  
+    color: rgb(165, 117, 43);
+  }
+}
+.jcicon-meme-haha .path8 {
+  &:before {
+    content: $jcicon-meme-haha-path8;  
+    margin-left: -1em;  
+    color: rgb(214, 89, 12);
+  }
+}
+.jcicon-meme-haha .path9 {
+  &:before {
+    content: $jcicon-meme-haha-path9;  
+    margin-left: -1em;  
+    color: rgb(135, 181, 227);
+  }
+}
+.jcicon-meme-haha .path10 {
+  &:before {
+    content: $jcicon-meme-haha-path10;  
+    margin-left: -1em;  
+    color: rgb(135, 181, 227);
+  }
+}
+.jcicon-meme-haha .path11 {
+  &:before {
+    content: $jcicon-meme-haha-path11;  
+    margin-left: -1em;  
+    color: rgb(234, 236, 229);
+  }
+}
+.jcicon-meme-haha .path12 {
+  &:before {
+    content: $jcicon-meme-haha-path12;  
+    margin-left: -1em;  
+    color: rgb(95, 178, 219);
+  }
+}
+.jcicon-meme-love .path1 {
+  &:before {
+    content: $jcicon-meme-love-path1;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-meme-love .path2 {
+  &:before {
+    content: $jcicon-meme-love-path2;  
+    margin-left: -1em;  
+    color: rgb(248, 200, 0);
+  }
+}
+.jcicon-meme-love .path3 {
+  &:before {
+    content: $jcicon-meme-love-path3;  
+    margin-left: -1em;  
+    color: rgb(165, 117, 43);
+  }
+}
+.jcicon-meme-love .path4 {
+  &:before {
+    content: $jcicon-meme-love-path4;  
+    margin-left: -1em;  
+    color: rgb(244, 125, 155);
+  }
+}
+.jcicon-meme-love .path5 {
+  &:before {
+    content: $jcicon-meme-love-path5;  
+    margin-left: -1em;  
+    color: rgb(127, 96, 0);
+  }
+}
+.jcicon-meme-love .path6 {
+  &:before {
+    content: $jcicon-meme-love-path6;  
+    margin-left: -1em;  
+    color: rgb(244, 125, 155);
+  }
+}
+.jcicon-meme-love .path7 {
+  &:before {
+    content: $jcicon-meme-love-path7;  
+    margin-left: -1em;  
+    color: rgb(127, 96, 0);
+  }
+}
+.jcicon-meme-love .path8 {
+  &:before {
+    content: $jcicon-meme-love-path8;  
+    margin-left: -1em;  
+    color: rgb(135, 181, 227);
+  }
+}
+.jcicon-meme-love .path9 {
+  &:before {
+    content: $jcicon-meme-love-path9;  
+    margin-left: -1em;  
+    color: rgb(135, 181, 227);
+  }
+}
+.jcicon-meme-love .path10 {
+  &:before {
+    content: $jcicon-meme-love-path10;  
+    margin-left: -1em;  
+    color: rgb(214, 89, 12);
+  }
+}
+.jcicon-meme-love .path11 {
+  &:before {
+    content: $jcicon-meme-love-path11;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-meme-love .path12 {
+  &:before {
+    content: $jcicon-meme-love-path12;  
+    margin-left: -1em;  
+    color: rgb(234, 236, 229);
+  }
+}
+.jcicon-meme-love .path13 {
+  &:before {
+    content: $jcicon-meme-love-path13;  
+    margin-left: -1em;  
+    color: rgb(101, 56, 20);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-meme-love .path14 {
+  &:before {
+    content: $jcicon-meme-love-path14;  
+    margin-left: -1em;  
+    color: rgb(95, 178, 219);
+  }
+}
+.jcicon-meme-love .path15 {
+  &:before {
+    content: $jcicon-meme-love-path15;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 222);  
+    opacity: 0.8304;
+  }
+}
+.jcicon-meme-show-teeth .path1 {
+  &:before {
+    content: $jcicon-meme-show-teeth-path1;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-meme-show-teeth .path2 {
+  &:before {
+    content: $jcicon-meme-show-teeth-path2;  
+    margin-left: -1em;  
+    color: rgb(248, 200, 0);
+  }
+}
+.jcicon-meme-show-teeth .path3 {
+  &:before {
+    content: $jcicon-meme-show-teeth-path3;  
+    margin-left: -1em;  
+    color: rgb(65, 44, 0);
+  }
+}
+.jcicon-meme-show-teeth .path4 {
+  &:before {
+    content: $jcicon-meme-show-teeth-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-meme-show-teeth .path5 {
+  &:before {
+    content: $jcicon-meme-show-teeth-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-meme-show-teeth .path6 {
+  &:before {
+    content: $jcicon-meme-show-teeth-path6;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-meme-show-teeth .path7 {
+  &:before {
+    content: $jcicon-meme-show-teeth-path7;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-meme-show-teeth .path8 {
+  &:before {
+    content: $jcicon-meme-show-teeth-path8;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-meme-show-teeth .path9 {
+  &:before {
+    content: $jcicon-meme-show-teeth-path9;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-meme-show-teeth .path10 {
+  &:before {
+    content: $jcicon-meme-show-teeth-path10;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-meme-show-teeth .path11 {
+  &:before {
+    content: $jcicon-meme-show-teeth-path11;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-meme-show-teeth .path12 {
+  &:before {
+    content: $jcicon-meme-show-teeth-path12;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-meme-show-teeth .path13 {
+  &:before {
+    content: $jcicon-meme-show-teeth-path13;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-meme-shut-up .path1 {
+  &:before {
+    content: $jcicon-meme-shut-up-path1;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-meme-shut-up .path2 {
+  &:before {
+    content: $jcicon-meme-shut-up-path2;  
+    margin-left: -1em;  
+    color: rgb(248, 200, 0);
+  }
+}
+.jcicon-meme-shut-up .path3 {
+  &:before {
+    content: $jcicon-meme-shut-up-path3;  
+    margin-left: -1em;  
+    color: rgb(249, 249, 249);
+  }
+}
+.jcicon-meme-shut-up .path4 {
+  &:before {
+    content: $jcicon-meme-shut-up-path4;  
+    margin-left: -1em;  
+    color: rgb(83, 64, 10);
+  }
+}
+.jcicon-meme-shut-up .path5 {
+  &:before {
+    content: $jcicon-meme-shut-up-path5;  
+    margin-left: -1em;  
+    color: rgb(249, 249, 249);
+  }
+}
+.jcicon-meme-shut-up .path6 {
+  &:before {
+    content: $jcicon-meme-shut-up-path6;  
+    margin-left: -1em;  
+    color: rgb(83, 64, 10);
+  }
+}
+.jcicon-meme-shut-up .path7 {
+  &:before {
+    content: $jcicon-meme-shut-up-path7;  
+    margin-left: -1em;  
+    color: rgb(249, 249, 249);
+  }
+}
+.jcicon-meme-shut-up .path8 {
+  &:before {
+    content: $jcicon-meme-shut-up-path8;  
+    margin-left: -1em;  
+    color: rgb(83, 64, 10);
+  }
+}
+.jcicon-meme-shut-up .path9 {
+  &:before {
+    content: $jcicon-meme-shut-up-path9;  
+    margin-left: -1em;  
+    color: rgb(249, 249, 249);
+  }
+}
+.jcicon-meme-shut-up .path10 {
+  &:before {
+    content: $jcicon-meme-shut-up-path10;  
+    margin-left: -1em;  
+    color: rgb(83, 64, 10);
+  }
+}
+.jcicon-meme-shut-up .path11 {
+  &:before {
+    content: $jcicon-meme-shut-up-path11;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-meme-smile .path1 {
+  &:before {
+    content: $jcicon-meme-smile-path1;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-meme-smile .path2 {
+  &:before {
+    content: $jcicon-meme-smile-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-meme-smile .path3 {
+  &:before {
+    content: $jcicon-meme-smile-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-meme-smile .path4 {
+  &:before {
+    content: $jcicon-meme-smile-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-meme-smile .path5 {
+  &:before {
+    content: $jcicon-meme-smile-path5;  
+    margin-left: -1em;  
+    color: rgb(248, 200, 0);
+  }
+}
+.jcicon-mindmap {
+  &:before {
+    content: $jcicon-mindmap; 
+  }
+}
+.jcicon-mindmap-color .path1 {
+  &:before {
+    content: $jcicon-mindmap-color-path1;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-mindmap-color .path2 {
+  &:before {
+    content: $jcicon-mindmap-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-mindmap-color .path3 {
+  &:before {
+    content: $jcicon-mindmap-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-mindmap-color .path4 {
+  &:before {
+    content: $jcicon-mindmap-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-mindmap-color .path5 {
+  &:before {
+    content: $jcicon-mindmap-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-move .path1 {
+  &:before {
+    content: $jcicon-move-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-move .path2 {
+  &:before {
+    content: $jcicon-move-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-move .path3 {
+  &:before {
+    content: $jcicon-move-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-move .path4 {
+  &:before {
+    content: $jcicon-move-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-move .path5 {
+  &:before {
+    content: $jcicon-move-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-move .path6 {
+  &:before {
+    content: $jcicon-move-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-move .path7 {
+  &:before {
+    content: $jcicon-move-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-move .path8 {
+  &:before {
+    content: $jcicon-move-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-move .path9 {
+  &:before {
+    content: $jcicon-move-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-move .path10 {
+  &:before {
+    content: $jcicon-move-path10;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-move .path11 {
+  &:before {
+    content: $jcicon-move-path11;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-move .path12 {
+  &:before {
+    content: $jcicon-move-path12;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-notebook {
+  &:before {
+    content: $jcicon-notebook; 
+  }
+}
+.jcicon-notebook-color .path1 {
+  &:before {
+    content: $jcicon-notebook-color-path1;  
+    color: rgb(45, 182, 236);
+  }
+}
+.jcicon-notebook-color .path2 {
+  &:before {
+    content: $jcicon-notebook-color-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 0);
+  }
+}
+.jcicon-notebook-color .path3 {
+  &:before {
+    content: $jcicon-notebook-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-notebook-color .path4 {
+  &:before {
+    content: $jcicon-notebook-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-notebook-color .path5 {
+  &:before {
+    content: $jcicon-notebook-color-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 0, 0);
+  }
+}
+.jcicon-notebook-color .path6 {
+  &:before {
+    content: $jcicon-notebook-color-path6;  
+    margin-left: -1em;  
+    color: rgb(255, 0, 0);
+  }
+}
+.jcicon-notebook-color .path7 {
+  &:before {
+    content: $jcicon-notebook-color-path7;  
+    margin-left: -1em;  
+    color: rgb(255, 0, 0);
+  }
+}
+.jcicon-notebook-color .path8 {
+  &:before {
+    content: $jcicon-notebook-color-path8;  
+    margin-left: -1em;  
+    color: rgb(255, 0, 0);
+  }
+}
+.jcicon-notebook-color .path9 {
+  &:before {
+    content: $jcicon-notebook-color-path9;  
+    margin-left: -1em;  
+    color: rgb(255, 0, 0);
+  }
+}
+.jcicon-notebook-color .path10 {
+  &:before {
+    content: $jcicon-notebook-color-path10;  
+    margin-left: -1em;  
+    color: rgb(235, 167, 255);
+  }
+}
+.jcicon-notebook-color .path11 {
+  &:before {
+    content: $jcicon-notebook-color-path11;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-notebook-color .path12 {
+  &:before {
+    content: $jcicon-notebook-color-path12;  
+    margin-left: -1em;  
+    color: rgb(235, 167, 255);
+  }
+}
+.jcicon-notebook-color .path13 {
+  &:before {
+    content: $jcicon-notebook-color-path13;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-notebook-color .path14 {
+  &:before {
+    content: $jcicon-notebook-color-path14;  
+    margin-left: -1em;  
+    color: rgb(235, 167, 255);
+  }
+}
+.jcicon-notebook-color .path15 {
+  &:before {
+    content: $jcicon-notebook-color-path15;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-notebook-color .path16 {
+  &:before {
+    content: $jcicon-notebook-color-path16;  
+    margin-left: -1em;  
+    color: rgb(235, 167, 255);
+  }
+}
+.jcicon-notebook-color .path17 {
+  &:before {
+    content: $jcicon-notebook-color-path17;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-office-excel .path1 {
+  &:before {
+    content: $jcicon-office-excel-path1;  
+    color: rgb(33, 163, 102);
+  }
+}
+.jcicon-office-excel .path2 {
+  &:before {
+    content: $jcicon-office-excel-path2;  
+    margin-left: -1em;  
+    color: rgb(51, 196, 129);
+  }
+}
+.jcicon-office-excel .path3 {
+  &:before {
+    content: $jcicon-office-excel-path3;  
+    margin-left: -1em;  
+    color: rgb(16, 122, 64);
+  }
+}
+.jcicon-office-excel .path4 {
+  &:before {
+    content: $jcicon-office-excel-path4;  
+    margin-left: -1em;  
+    color: rgb(33, 163, 102);
+  }
+}
+.jcicon-office-excel .path5 {
+  &:before {
+    content: $jcicon-office-excel-path5;  
+    margin-left: -1em;  
+    color: rgb(16, 124, 65);
+  }
+}
+.jcicon-office-excel .path6 {
+  &:before {
+    content: $jcicon-office-excel-path6;  
+    margin-left: -1em;  
+    color: rgb(24, 92, 55);
+  }
+}
+.jcicon-office-excel .path7 {
+  &:before {
+    content: $jcicon-office-excel-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 0);
+  }
+}
+.jcicon-office-ppt .path1 {
+  &:before {
+    content: $jcicon-office-ppt-path1;  
+    color: rgb(255, 143, 107);  
+    opacity: 0.9765;
+  }
+}
+.jcicon-office-ppt .path2 {
+  &:before {
+    content: $jcicon-office-ppt-path2;  
+    margin-left: -1em;  
+    color: rgb(211, 82, 48);  
+    opacity: 0.9647;
+  }
+}
+.jcicon-office-ppt .path3 {
+  &:before {
+    content: $jcicon-office-ppt-path3;  
+    margin-left: -1em;  
+    color: rgb(237, 108, 71);  
+    opacity: 0.9647;
+  }
+}
+.jcicon-office-ppt .path4 {
+  &:before {
+    content: $jcicon-office-ppt-path4;  
+    margin-left: -1em;  
+    color: rgb(194, 62, 31);
+  }
+}
+.jcicon-page-max {
+  &:before {
+    content: $jcicon-page-max; 
+  }
+}
+.jcicon-page-max-v2 .path1 {
+  &:before {
+    content: $jcicon-page-max-v2-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-page-max-v2 .path2 {
+  &:before {
+    content: $jcicon-page-max-v2-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-page-max-v2 .path3 {
+  &:before {
+    content: $jcicon-page-max-v2-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-page-max-v2 .path4 {
+  &:before {
+    content: $jcicon-page-max-v2-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-page-max-v2 .path5 {
+  &:before {
+    content: $jcicon-page-max-v2-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-page-max-v2 .path6 {
+  &:before {
+    content: $jcicon-page-max-v2-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-page-max-v2 .path7 {
+  &:before {
+    content: $jcicon-page-max-v2-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-page-max-v2 .path8 {
+  &:before {
+    content: $jcicon-page-max-v2-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-page-max-v2 .path9 {
+  &:before {
+    content: $jcicon-page-max-v2-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-page-max-v2 .path10 {
+  &:before {
+    content: $jcicon-page-max-v2-path10;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-page-max-v2 .path11 {
+  &:before {
+    content: $jcicon-page-max-v2-path11;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-page-max-v2 .path12 {
+  &:before {
+    content: $jcicon-page-max-v2-path12;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-page-restore {
+  &:before {
+    content: $jcicon-page-restore; 
+  }
+}
+.jcicon-page-restore-v2 .path1 {
+  &:before {
+    content: $jcicon-page-restore-v2-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-page-restore-v2 .path2 {
+  &:before {
+    content: $jcicon-page-restore-v2-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-page-restore-v2 .path3 {
+  &:before {
+    content: $jcicon-page-restore-v2-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-page-restore-v2 .path4 {
+  &:before {
+    content: $jcicon-page-restore-v2-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-page-restore-v2 .path5 {
+  &:before {
+    content: $jcicon-page-restore-v2-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-page-restore-v2 .path6 {
+  &:before {
+    content: $jcicon-page-restore-v2-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-page-restore-v2 .path7 {
+  &:before {
+    content: $jcicon-page-restore-v2-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-page-restore-v2 .path8 {
+  &:before {
+    content: $jcicon-page-restore-v2-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-page-restore-v2 .path9 {
+  &:before {
+    content: $jcicon-page-restore-v2-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-page-restore-v2 .path10 {
+  &:before {
+    content: $jcicon-page-restore-v2-path10;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-page-restore-v2 .path11 {
+  &:before {
+    content: $jcicon-page-restore-v2-path11;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-page-restore-v2 .path12 {
+  &:before {
+    content: $jcicon-page-restore-v2-path12;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-painter .path1 {
+  &:before {
+    content: $jcicon-painter-path1;  
+    color: rgb(255, 0, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-painter .path2 {
+  &:before {
+    content: $jcicon-painter-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-painter .path3 {
+  &:before {
+    content: $jcicon-painter-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-painter .path4 {
+  &:before {
+    content: $jcicon-painter-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 255, 255);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-painter .path5 {
+  &:before {
+    content: $jcicon-painter-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 128, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-painter .path6 {
+  &:before {
+    content: $jcicon-painter-path6;  
+    margin-left: -1em;  
+    color: rgb(55, 128, 225);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-painter .path7 {
+  &:before {
+    content: $jcicon-painter-path7;  
+    margin-left: -1em;  
+    color: rgb(55, 128, 225);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-painter .path8 {
+  &:before {
+    content: $jcicon-painter-path8;  
+    margin-left: -1em;  
+    color: rgb(251, 0, 0);
+  }
+}
+.jcicon-painter .path9 {
+  &:before {
+    content: $jcicon-painter-path9;  
+    margin-left: -1em;  
+    color: rgb(33, 163, 102);
+  }
+}
+.jcicon-painter .path10 {
+  &:before {
+    content: $jcicon-painter-path10;  
+    margin-left: -1em;  
+    color: rgb(255, 238, 170);
+  }
+}
+.jcicon-painter .path11 {
+  &:before {
+    content: $jcicon-painter-path11;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-painter .path12 {
+  &:before {
+    content: $jcicon-painter-path12;  
+    margin-left: -1em;  
+    color: rgb(58, 57, 75);
+  }
+}
+.jcicon-painter .path13 {
+  &:before {
+    content: $jcicon-painter-path13;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-painter .path14 {
+  &:before {
+    content: $jcicon-painter-path14;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-painter .path15 {
+  &:before {
+    content: $jcicon-painter-path15;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-painter .path16 {
+  &:before {
+    content: $jcicon-painter-path16;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-pen {
+  &:before {
+    content: $jcicon-pen; 
+  }
+}
+.jcicon-pen-classic {
+  &:before {
+    content: $jcicon-pen-classic; 
+  }
+}
+.jcicon-pen-color .path1 {
+  &:before {
+    content: $jcicon-pen-color-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-pen-color .path2 {
+  &:before {
+    content: $jcicon-pen-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-pen-color .path3 {
+  &:before {
+    content: $jcicon-pen-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-pen-color .path4 {
+  &:before {
+    content: $jcicon-pen-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-pen-color .path5 {
+  &:before {
+    content: $jcicon-pen-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-pen-color .path6 {
+  &:before {
+    content: $jcicon-pen-color-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-pen-color .path7 {
+  &:before {
+    content: $jcicon-pen-color-path7;  
+    margin-left: -1em;  
+    color: rgb(183, 221, 232);
+  }
+}
+.jcicon-pen-color .path8 {
+  &:before {
+    content: $jcicon-pen-color-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-pen-color .path9 {
+  &:before {
+    content: $jcicon-pen-color-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-pen-color .path10 {
+  &:before {
+    content: $jcicon-pen-color-path10;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-pen-color .path11 {
+  &:before {
+    content: $jcicon-pen-color-path11;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-pen-color .path12 {
+  &:before {
+    content: $jcicon-pen-color-path12;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-pen-draw .path1 {
+  &:before {
+    content: $jcicon-pen-draw-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-pen-draw .path2 {
+  &:before {
+    content: $jcicon-pen-draw-path2;  
+    margin-left: -1em;  
+    color: rgb(128, 128, 128);
+  }
+}
+.jcicon-pentagram {
+  &:before {
+    content: $jcicon-pentagram; 
+  }
+}
+.jcicon-pentagram-empty {
+  &:before {
+    content: $jcicon-pentagram-empty; 
+  }
+}
+.jcicon-pentagram-half {
+  &:before {
+    content: $jcicon-pentagram-half; 
+  }
+}
+.jcicon-pictures .path1 {
+  &:before {
+    content: $jcicon-pictures-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-pictures .path2 {
+  &:before {
+    content: $jcicon-pictures-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-pictures .path3 {
+  &:before {
+    content: $jcicon-pictures-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-pictures .path4 {
+  &:before {
+    content: $jcicon-pictures-path4;  
+    margin-left: -1em;  
+    color: rgb(204, 204, 204);
+  }
+}
+.jcicon-pictures .path5 {
+  &:before {
+    content: $jcicon-pictures-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-pictures .path6 {
+  &:before {
+    content: $jcicon-pictures-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-pictures .path7 {
+  &:before {
+    content: $jcicon-pictures-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-pictures-color .path1 {
+  &:before {
+    content: $jcicon-pictures-color-path1;  
+    color: rgb(1, 0, 0);
+  }
+}
+.jcicon-pictures-color .path2 {
+  &:before {
+    content: $jcicon-pictures-color-path2;  
+    margin-left: -1em;  
+    color: rgb(251, 0, 0);
+  }
+}
+.jcicon-pictures-color .path3 {
+  &:before {
+    content: $jcicon-pictures-color-path3;  
+    margin-left: -1em;  
+    color: rgb(33, 163, 102);
+  }
+}
+.jcicon-pictures-color .path4 {
+  &:before {
+    content: $jcicon-pictures-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 146, 208);
+  }
+}
+.jcicon-pictures-color .path5 {
+  &:before {
+    content: $jcicon-pictures-color-path5;  
+    margin-left: -1em;  
+    color: rgb(1, 0, 0);
+  }
+}
+.jcicon-pictures-color .path6 {
+  &:before {
+    content: $jcicon-pictures-color-path6;  
+    margin-left: -1em;  
+    color: rgb(1, 0, 0);
+  }
+}
+.jcicon-pictures-color .path7 {
+  &:before {
+    content: $jcicon-pictures-color-path7;  
+    margin-left: -1em;  
+    color: rgb(1, 0, 0);
+  }
+}
+.jcicon-pictures-color .path8 {
+  &:before {
+    content: $jcicon-pictures-color-path8;  
+    margin-left: -1em;  
+    color: rgb(255, 238, 170);
+  }
+}
+.jcicon-pictures-color .path9 {
+  &:before {
+    content: $jcicon-pictures-color-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-pin {
+  &:before {
+    content: $jcicon-pin; 
+  }
+}
+.jcicon-printer .path1 {
+  &:before {
+    content: $jcicon-printer-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-printer .path2 {
+  &:before {
+    content: $jcicon-printer-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-printer .path3 {
+  &:before {
+    content: $jcicon-printer-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-printer .path4 {
+  &:before {
+    content: $jcicon-printer-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-printer .path5 {
+  &:before {
+    content: $jcicon-printer-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-printer .path6 {
+  &:before {
+    content: $jcicon-printer-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-printer .path7 {
+  &:before {
+    content: $jcicon-printer-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-printer .path8 {
+  &:before {
+    content: $jcicon-printer-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-printer-color .path1 {
+  &:before {
+    content: $jcicon-printer-color-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-printer-color .path2 {
+  &:before {
+    content: $jcicon-printer-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-printer-color .path3 {
+  &:before {
+    content: $jcicon-printer-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-printer-color .path4 {
+  &:before {
+    content: $jcicon-printer-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-printer-color .path5 {
+  &:before {
+    content: $jcicon-printer-color-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-printer-color .path6 {
+  &:before {
+    content: $jcicon-printer-color-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-printer-color .path7 {
+  &:before {
+    content: $jcicon-printer-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-printer-color .path8 {
+  &:before {
+    content: $jcicon-printer-color-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-print-screen .path1 {
+  &:before {
+    content: $jcicon-print-screen-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-print-screen .path2 {
+  &:before {
+    content: $jcicon-print-screen-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-print-screen .path3 {
+  &:before {
+    content: $jcicon-print-screen-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-print-screen .path4 {
+  &:before {
+    content: $jcicon-print-screen-path4;  
+    margin-left: -1em;  
+    color: rgb(204, 204, 204);
+  }
+}
+.jcicon-print-screen .path5 {
+  &:before {
+    content: $jcicon-print-screen-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-print-screen .path6 {
+  &:before {
+    content: $jcicon-print-screen-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-print-screen .path7 {
+  &:before {
+    content: $jcicon-print-screen-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-print-screen-color .path1 {
+  &:before {
+    content: $jcicon-print-screen-color-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-print-screen-color .path2 {
+  &:before {
+    content: $jcicon-print-screen-color-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 0, 0);
+  }
+}
+.jcicon-print-screen-color .path3 {
+  &:before {
+    content: $jcicon-print-screen-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 167, 255);
+  }
+}
+.jcicon-print-screen-color .path4 {
+  &:before {
+    content: $jcicon-print-screen-color-path4;  
+    margin-left: -1em;  
+    color: rgb(91, 255, 205);
+  }
+}
+.jcicon-print-screen-color .path5 {
+  &:before {
+    content: $jcicon-print-screen-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-print-screen-color .path6 {
+  &:before {
+    content: $jcicon-print-screen-color-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-print-screen-color .path7 {
+  &:before {
+    content: $jcicon-print-screen-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-QR-code {
+  &:before {
+    content: $jcicon-QR-code; 
+  }
+}
+.jcicon-recycle {
+  &:before {
+    content: $jcicon-recycle; 
+  }
+}
+.jcicon-recycle-color .path1 {
+  &:before {
+    content: $jcicon-recycle-color-path1;  
+    color: rgb(0, 128, 0);
+  }
+}
+.jcicon-recycle-color .path2 {
+  &:before {
+    content: $jcicon-recycle-color-path2;  
+    margin-left: -1em;  
+    color: rgb(204, 204, 204);
+  }
+}
+.jcicon-recycle-color .path3 {
+  &:before {
+    content: $jcicon-recycle-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 0);
+  }
+}
+.jcicon-recycle-color .path4 {
+  &:before {
+    content: $jcicon-recycle-color-path4;  
+    margin-left: -1em;  
+    color: rgb(204, 204, 204);
+  }
+}
+.jcicon-recycle-color .path5 {
+  &:before {
+    content: $jcicon-recycle-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 0);
+  }
+}
+.jcicon-recycle-color .path6 {
+  &:before {
+    content: $jcicon-recycle-color-path6;  
+    margin-left: -1em;  
+    color: rgb(204, 204, 204);
+  }
+}
+.jcicon-recycle-color .path7 {
+  &:before {
+    content: $jcicon-recycle-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-recycle-color .path8 {
+  &:before {
+    content: $jcicon-recycle-color-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-recycle-color .path9 {
+  &:before {
+    content: $jcicon-recycle-color-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-recycle-color .path10 {
+  &:before {
+    content: $jcicon-recycle-color-path10;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-recycle-color .path11 {
+  &:before {
+    content: $jcicon-recycle-color-path11;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-recycle-color .path12 {
+  &:before {
+    content: $jcicon-recycle-color-path12;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-reflesh {
+  &:before {
+    content: $jcicon-reflesh; 
+  }
+}
+.jcicon-reflesh-color .path1 {
+  &:before {
+    content: $jcicon-reflesh-color-path1;  
+    color: rgb(34, 142, 142);
+  }
+}
+.jcicon-reflesh-color .path2 {
+  &:before {
+    content: $jcicon-reflesh-color-path2;  
+    margin-left: -1em;  
+    color: rgb(128, 102, 0);
+  }
+}
+.jcicon-save {
+  &:before {
+    content: $jcicon-save; 
+  }
+}
+.jcicon-save-color .path1 {
+  &:before {
+    content: $jcicon-save-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-save-color .path2 {
+  &:before {
+    content: $jcicon-save-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-save-color .path3 {
+  &:before {
+    content: $jcicon-save-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-save-color .path4 {
+  &:before {
+    content: $jcicon-save-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-save-color .path5 {
+  &:before {
+    content: $jcicon-save-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-save-color .path6 {
+  &:before {
+    content: $jcicon-save-color-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-save-color .path7 {
+  &:before {
+    content: $jcicon-save-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-save-color .path8 {
+  &:before {
+    content: $jcicon-save-color-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-save-color .path9 {
+  &:before {
+    content: $jcicon-save-color-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-save-color .path10 {
+  &:before {
+    content: $jcicon-save-color-path10;  
+    margin-left: -1em;  
+    color: rgb(255, 102, 0);
+  }
+}
+.jcicon-save-color .path11 {
+  &:before {
+    content: $jcicon-save-color-path11;  
+    margin-left: -1em;  
+    color: rgb(255, 102, 0);
+  }
+}
+.jcicon-save-color .path12 {
+  &:before {
+    content: $jcicon-save-color-path12;  
+    margin-left: -1em;  
+    color: rgb(255, 102, 0);
+  }
+}
+.jcicon-save-color .path13 {
+  &:before {
+    content: $jcicon-save-color-path13;  
+    margin-left: -1em;  
+    color: rgb(255, 102, 0);
+  }
+}
+.jcicon-save-color .path14 {
+  &:before {
+    content: $jcicon-save-color-path14;  
+    margin-left: -1em;  
+    color: rgb(255, 102, 0);
+  }
+}
+.jcicon-save-color .path15 {
+  &:before {
+    content: $jcicon-save-color-path15;  
+    margin-left: -1em;  
+    color: rgb(255, 102, 0);
+  }
+}
+.jcicon-save-color .path16 {
+  &:before {
+    content: $jcicon-save-color-path16;  
+    margin-left: -1em;  
+    color: rgb(255, 102, 0);
+  }
+}
+.jcicon-save-color .path17 {
+  &:before {
+    content: $jcicon-save-color-path17;  
+    margin-left: -1em;  
+    color: rgb(255, 102, 0);
+  }
+}
+.jcicon-scan {
+  &:before {
+    content: $jcicon-scan; 
+  }
+}
+.jcicon-scan-color .path1 {
+  &:before {
+    content: $jcicon-scan-color-path1;  
+    color: rgb(3, 24, 39);
+  }
+}
+.jcicon-scan-color .path2 {
+  &:before {
+    content: $jcicon-scan-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-search {
+  &:before {
+    content: $jcicon-search; 
+  }
+}
+.jcicon-search-v2 {
+  &:before {
+    content: $jcicon-search-v2; 
+  }
+}
+.jcicon-search-v2-color .path1 {
+  &:before {
+    content: $jcicon-search-v2-color-path1;  
+    color: rgb(120, 68, 33);
+  }
+}
+.jcicon-search-v2-color .path2 {
+  &:before {
+    content: $jcicon-search-v2-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-select-outline {
+  &:before {
+    content: $jcicon-select-outline; 
+  }
+}
+.jcicon-select-solid {
+  &:before {
+    content: $jcicon-select-solid; 
+  }
+}
+.jcicon-setting-fill {
+  &:before {
+    content: $jcicon-setting-fill; 
+  }
+}
+.jcicon-setting-fill-rotate {
+  &:before {
+    content: $jcicon-setting-fill-rotate; 
+  }
+}
+.jcicon-setting-v2 {
+  &:before {
+    content: $jcicon-setting-v2; 
+  }
+}
+.jcicon-setting-v2-color .path1 {
+  &:before {
+    content: $jcicon-setting-v2-color-path1;  
+    color: rgb(160, 137, 44);
+  }
+}
+.jcicon-setting-v2-color .path2 {
+  &:before {
+    content: $jcicon-setting-v2-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-setting-v2-rotate {
+  &:before {
+    content: $jcicon-setting-v2-rotate; 
+  }
+}
+.jcicon-setting-v2-rotate-color .path1 {
+  &:before {
+    content: $jcicon-setting-v2-rotate-color-path1;  
+    color: rgb(160, 137, 44);
+  }
+}
+.jcicon-setting-v2-rotate-color .path2 {
+  &:before {
+    content: $jcicon-setting-v2-rotate-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-shape-circle .path1 {
+  &:before {
+    content: $jcicon-shape-circle-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-shape-circle .path2 {
+  &:before {
+    content: $jcicon-shape-circle-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-shape-rectangle .path1 {
+  &:before {
+    content: $jcicon-shape-rectangle-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-shape-rectangle .path2 {
+  &:before {
+    content: $jcicon-shape-rectangle-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-shape-right-triangle .path1 {
+  &:before {
+    content: $jcicon-shape-right-triangle-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-shape-right-triangle .path2 {
+  &:before {
+    content: $jcicon-shape-right-triangle-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-shape-square .path1 {
+  &:before {
+    content: $jcicon-shape-square-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-shape-square .path2 {
+  &:before {
+    content: $jcicon-shape-square-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-shape-triangle .path1 {
+  &:before {
+    content: $jcicon-shape-triangle-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-shape-triangle .path2 {
+  &:before {
+    content: $jcicon-shape-triangle-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-share {
+  &:before {
+    content: $jcicon-share; 
+  }
+}
+.jcicon-shopping-cart-empty {
+  &:before {
+    content: $jcicon-shopping-cart-empty; 
+  }
+}
+.jcicon-shopping-cart-empty-color .path1 {
+  &:before {
+    content: $jcicon-shopping-cart-empty-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-shopping-cart-empty-color .path2 {
+  &:before {
+    content: $jcicon-shopping-cart-empty-color-path2;  
+    margin-left: -1em;  
+    color: rgb(128, 102, 0);
+  }
+}
+.jcicon-shopping-cart-full {
+  &:before {
+    content: $jcicon-shopping-cart-full; 
+  }
+}
+.jcicon-shopping-cart-full-color .path1 {
+  &:before {
+    content: $jcicon-shopping-cart-full-color-path1;  
+    color: rgb(255, 191, 2);
+  }
+}
+.jcicon-shopping-cart-full-color .path2 {
+  &:before {
+    content: $jcicon-shopping-cart-full-color-path2;  
+    margin-left: -1em;  
+    color: rgb(3, 3, 3);
+  }
+}
+.jcicon-shopping-cart-full-color .path3 {
+  &:before {
+    content: $jcicon-shopping-cart-full-color-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 1, 1);
+  }
+}
+.jcicon-study {
+  &:before {
+    content: $jcicon-study; 
+  }
+}
+.jcicon-study-color .path1 {
+  &:before {
+    content: $jcicon-study-color-path1;  
+    color: rgb(255, 228, 0);
+  }
+}
+.jcicon-study-color .path2 {
+  &:before {
+    content: $jcicon-study-color-path2;  
+    margin-left: -1em;  
+    color: rgb(77, 101, 179);
+  }
+}
+.jcicon-study-color .path3 {
+  &:before {
+    content: $jcicon-study-color-path3;  
+    margin-left: -1em;  
+    color: rgb(77, 101, 179);
+  }
+}
+.jcicon-study-color .path4 {
+  &:before {
+    content: $jcicon-study-color-path4;  
+    margin-left: -1em;  
+    color: rgb(77, 101, 179);
+  }
+}
+.jcicon-study-color .path5 {
+  &:before {
+    content: $jcicon-study-color-path5;  
+    margin-left: -1em;  
+    color: rgb(27, 160, 158);
+  }
+}
+.jcicon-study-color .path6 {
+  &:before {
+    content: $jcicon-study-color-path6;  
+    margin-left: -1em;  
+    color: rgb(27, 160, 158);
+  }
+}
+.jcicon-study-color .path7 {
+  &:before {
+    content: $jcicon-study-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-study-color .path8 {
+  &:before {
+    content: $jcicon-study-color-path8;  
+    margin-left: -1em;  
+    color: rgb(142, 101, 179);
+  }
+}
+.jcicon-study-color .path9 {
+  &:before {
+    content: $jcicon-study-color-path9;  
+    margin-left: -1em;  
+    color: rgb(106, 8, 29);
+  }
+}
+.jcicon-study-color .path10 {
+  &:before {
+    content: $jcicon-study-color-path10;  
+    margin-left: -1em;  
+    color: rgb(77, 101, 179);
+  }
+}
+.jcicon-study-color .path11 {
+  &:before {
+    content: $jcicon-study-color-path11;  
+    margin-left: -1em;  
+    color: rgb(148, 12, 106);
+  }
+}
+.jcicon-study-color .path12 {
+  &:before {
+    content: $jcicon-study-color-path12;  
+    margin-left: -1em;  
+    color: rgb(59, 14, 106);
+  }
+}
+.jcicon-study-color .path13 {
+  &:before {
+    content: $jcicon-study-color-path13;  
+    margin-left: -1em;  
+    color: rgb(212, 170, 0);
+  }
+}
+.jcicon-study-color .path14 {
+  &:before {
+    content: $jcicon-study-color-path14;  
+    margin-left: -1em;  
+    color: rgb(51, 37, 103);
+  }
+}
+.jcicon-study-color .path15 {
+  &:before {
+    content: $jcicon-study-color-path15;  
+    margin-left: -1em;  
+    color: rgb(77, 101, 179);
+  }
+}
+.jcicon-study-color .path16 {
+  &:before {
+    content: $jcicon-study-color-path16;  
+    margin-left: -1em;  
+    color: rgb(206, 194, 147);
+  }
+}
+.jcicon-study-color .path17 {
+  &:before {
+    content: $jcicon-study-color-path17;  
+    margin-left: -1em;  
+    color: rgb(206, 194, 147);
+  }
+}
+.jcicon-study-color .path18 {
+  &:before {
+    content: $jcicon-study-color-path18;  
+    margin-left: -1em;  
+    color: rgb(206, 194, 147);
+  }
+}
+.jcicon-study-color .path19 {
+  &:before {
+    content: $jcicon-study-color-path19;  
+    margin-left: -1em;  
+    color: rgb(206, 194, 147);
+  }
+}
+.jcicon-study-color .path20 {
+  &:before {
+    content: $jcicon-study-color-path20;  
+    margin-left: -1em;  
+    color: rgb(149, 12, 106);
+  }
+}
+.jcicon-symbol-add-bold {
+  &:before {
+    content: $jcicon-symbol-add-bold; 
+  }
+}
+.jcicon-symbol-minus-bold {
+  &:before {
+    content: $jcicon-symbol-minus-bold; 
+  }
+}
+.jcicon-symbol-more {
+  &:before {
+    content: $jcicon-symbol-more; 
+  }
+}
+.jcicon-system {
+  &:before {
+    content: $jcicon-system; 
+  }
+}
+.jcicon-system-v1-color .path1 {
+  &:before {
+    content: $jcicon-system-v1-color-path1;  
+    color: rgb(204, 0, 255);
+  }
+}
+.jcicon-system-v1-color .path2 {
+  &:before {
+    content: $jcicon-system-v1-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-system-v1-color .path3 {
+  &:before {
+    content: $jcicon-system-v1-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-system-v1-color .path4 {
+  &:before {
+    content: $jcicon-system-v1-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 176, 80);
+  }
+}
+.jcicon-system-v1-color .path5 {
+  &:before {
+    content: $jcicon-system-v1-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 176, 80);
+  }
+}
+.jcicon-system-v1-color .path6 {
+  &:before {
+    content: $jcicon-system-v1-color-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 176, 80);
+  }
+}
+.jcicon-system-v1-color .path7 {
+  &:before {
+    content: $jcicon-system-v1-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 176, 80);
+  }
+}
+.jcicon-system-v1-color .path8 {
+  &:before {
+    content: $jcicon-system-v1-color-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 176, 80);
+  }
+}
+.jcicon-system-v1-color .path9 {
+  &:before {
+    content: $jcicon-system-v1-color-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 176, 80);
+  }
+}
+.jcicon-system-v1-color .path10 {
+  &:before {
+    content: $jcicon-system-v1-color-path10;  
+    margin-left: -1em;  
+    color: rgb(0, 176, 80);
+  }
+}
+.jcicon-system-v1-color .path11 {
+  &:before {
+    content: $jcicon-system-v1-color-path11;  
+    margin-left: -1em;  
+    color: rgb(0, 176, 80);
+  }
+}
+.jcicon-system-v2-color .path1 {
+  &:before {
+    content: $jcicon-system-v2-color-path1;  
+    color: rgb(204, 0, 255);
+  }
+}
+.jcicon-system-v2-color .path2 {
+  &:before {
+    content: $jcicon-system-v2-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-system-v2-color .path3 {
+  &:before {
+    content: $jcicon-system-v2-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-system-v2-color .path4 {
+  &:before {
+    content: $jcicon-system-v2-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-system-v2-color .path5 {
+  &:before {
+    content: $jcicon-system-v2-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 176, 80);
+  }
+}
+.jcicon-system-v2-color .path6 {
+  &:before {
+    content: $jcicon-system-v2-color-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 176, 80);
+  }
+}
+.jcicon-system-v2-color .path7 {
+  &:before {
+    content: $jcicon-system-v2-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 176, 80);
+  }
+}
+.jcicon-system-v2-color .path8 {
+  &:before {
+    content: $jcicon-system-v2-color-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 176, 80);
+  }
+}
+.jcicon-system-v2-color .path9 {
+  &:before {
+    content: $jcicon-system-v2-color-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 176, 80);
+  }
+}
+.jcicon-system-v2-color .path10 {
+  &:before {
+    content: $jcicon-system-v2-color-path10;  
+    margin-left: -1em;  
+    color: rgb(0, 176, 80);
+  }
+}
+.jcicon-system-v2-color .path11 {
+  &:before {
+    content: $jcicon-system-v2-color-path11;  
+    margin-left: -1em;  
+    color: rgb(0, 176, 80);
+  }
+}
+.jcicon-system-v2-color .path12 {
+  &:before {
+    content: $jcicon-system-v2-color-path12;  
+    margin-left: -1em;  
+    color: rgb(0, 176, 80);
+  }
+}
+.jcicon-tablelamp {
+  &:before {
+    content: $jcicon-tablelamp; 
+  }
+}
+.jcicon-tablelamp-color .path1 {
+  &:before {
+    content: $jcicon-tablelamp-color-path1;  
+    color: rgb(77, 101, 179);
+  }
+}
+.jcicon-tablelamp-color .path2 {
+  &:before {
+    content: $jcicon-tablelamp-color-path2;  
+    margin-left: -1em;  
+    color: rgb(27, 160, 158);
+  }
+}
+.jcicon-tablelamp-color .path3 {
+  &:before {
+    content: $jcicon-tablelamp-color-path3;  
+    margin-left: -1em;  
+    color: rgb(27, 160, 158);
+  }
+}
+.jcicon-tablelamp-color .path4 {
+  &:before {
+    content: $jcicon-tablelamp-color-path4;  
+    margin-left: -1em;  
+    color: rgb(77, 101, 179);
+  }
+}
+.jcicon-tablelamp-color .path5 {
+  &:before {
+    content: $jcicon-tablelamp-color-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 228, 0);
+  }
+}
+.jcicon-tablelamp-color .path6 {
+  &:before {
+    content: $jcicon-tablelamp-color-path6;  
+    margin-left: -1em;  
+    color: rgb(142, 101, 179);
+  }
+}
+.jcicon-tablelamp-color .path7 {
+  &:before {
+    content: $jcicon-tablelamp-color-path7;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-take-class .path1 {
+  &:before {
+    content: $jcicon-take-class-path1;  
+    color: rgb(80, 99, 42);
+  }
+}
+.jcicon-take-class .path2 {
+  &:before {
+    content: $jcicon-take-class-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-take-class .path3 {
+  &:before {
+    content: $jcicon-take-class-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-take-class .path4 {
+  &:before {
+    content: $jcicon-take-class-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-take-class .path5 {
+  &:before {
+    content: $jcicon-take-class-path5;  
+    margin-left: -1em;  
+    color: rgb(219, 238, 243);
+  }
+}
+.jcicon-take-class .path6 {
+  &:before {
+    content: $jcicon-take-class-path6;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-take-class .path7 {
+  &:before {
+    content: $jcicon-take-class-path7;  
+    margin-left: -1em;  
+    color: rgb(191, 144, 0);
+  }
+}
+.jcicon-take-class .path8 {
+  &:before {
+    content: $jcicon-take-class-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-take-class .path9 {
+  &:before {
+    content: $jcicon-take-class-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-take-class .path10 {
+  &:before {
+    content: $jcicon-take-class-path10;  
+    margin-left: -1em;  
+    color: rgb(216, 216, 216);
+  }
+}
+.jcicon-take-class .path11 {
+  &:before {
+    content: $jcicon-take-class-path11;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-take-class .path12 {
+  &:before {
+    content: $jcicon-take-class-path12;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-take-class .path13 {
+  &:before {
+    content: $jcicon-take-class-path13;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-take-class .path14 {
+  &:before {
+    content: $jcicon-take-class-path14;  
+    margin-left: -1em;  
+    color: rgb(146, 57, 49);
+  }
+}
+.jcicon-take-class .path15 {
+  &:before {
+    content: $jcicon-take-class-path15;  
+    margin-left: -1em;  
+    color: rgb(242, 242, 242);
+  }
+}
+.jcicon-take-class .path16 {
+  &:before {
+    content: $jcicon-take-class-path16;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-time {
+  &:before {
+    content: $jcicon-time; 
+  }
+}
+.jcicon-time-color .path1 {
+  &:before {
+    content: $jcicon-time-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-time-color .path2 {
+  &:before {
+    content: $jcicon-time-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-tobottom {
+  &:before {
+    content: $jcicon-tobottom; 
+  }
+}
+.jcicon-tobottom-v2 {
+  &:before {
+    content: $jcicon-tobottom-v2; 
+  }
+}
+.jcicon-tobottom-v2-color .path1 {
+  &:before {
+    content: $jcicon-tobottom-v2-color-path1;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-tobottom-v2-color .path2 {
+  &:before {
+    content: $jcicon-tobottom-v2-color-path2;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-tobottom-v2-color .path3 {
+  &:before {
+    content: $jcicon-tobottom-v2-color-path3;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-tobottom-v2-color .path4 {
+  &:before {
+    content: $jcicon-tobottom-v2-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-toggle-left {
+  &:before {
+    content: $jcicon-toggle-left; 
+  }
+}
+.jcicon-toggle-left-color .path1 {
+  &:before {
+    content: $jcicon-toggle-left-color-path1;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-toggle-left-color .path2 {
+  &:before {
+    content: $jcicon-toggle-left-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-toggle-left-color .path3 {
+  &:before {
+    content: $jcicon-toggle-left-color-path3;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-toggle-left-color .path4 {
+  &:before {
+    content: $jcicon-toggle-left-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-toggle-left-color .path5 {
+  &:before {
+    content: $jcicon-toggle-left-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-toggle-left-v2 {
+  &:before {
+    content: $jcicon-toggle-left-v2; 
+  }
+}
+.jcicon-toggle-left-v2-color .path1 {
+  &:before {
+    content: $jcicon-toggle-left-v2-color-path1;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-toggle-left-v2-color .path2 {
+  &:before {
+    content: $jcicon-toggle-left-v2-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);  
+    opacity: 0.9167;
+  }
+}
+.jcicon-toggle-left-v2-color .path3 {
+  &:before {
+    content: $jcicon-toggle-left-v2-color-path3;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-toggle-left-v2-color .path4 {
+  &:before {
+    content: $jcicon-toggle-left-v2-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);  
+    opacity: 0.9167;
+  }
+}
+.jcicon-toggle-right {
+  &:before {
+    content: $jcicon-toggle-right; 
+  }
+}
+.jcicon-toggle-right-color {
+  &:before {
+    content: $jcicon-toggle-right-color; 
+  }
+}
+.jcicon-toggle-right-v2 {
+  &:before {
+    content: $jcicon-toggle-right-v2; 
+  }
+}
+.jcicon-toggle-right-v2-color .path1 {
+  &:before {
+    content: $jcicon-toggle-right-v2-color-path1;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-toggle-right-v2-color .path2 {
+  &:before {
+    content: $jcicon-toggle-right-v2-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);  
+    opacity: 0.9167;
+  }
+}
+.jcicon-toggle-right-v2-color .path3 {
+  &:before {
+    content: $jcicon-toggle-right-v2-color-path3;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-toggle-right-v2-color .path4 {
+  &:before {
+    content: $jcicon-toggle-right-v2-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);  
+    opacity: 0.9167;
+  }
+}
+.jcicon-tool {
+  &:before {
+    content: $jcicon-tool; 
+  }
+}
+.jcicon-tools {
+  &:before {
+    content: $jcicon-tools; 
+  }
+}
+.jcicon-totop {
+  &:before {
+    content: $jcicon-totop; 
+  }
+}
+.jcicon-totop-v2 {
+  &:before {
+    content: $jcicon-totop-v2; 
+  }
+}
+.jcicon-totop-v2-color .path1 {
+  &:before {
+    content: $jcicon-totop-v2-color-path1;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-totop-v2-color .path2 {
+  &:before {
+    content: $jcicon-totop-v2-color-path2;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-totop-v2-color .path3 {
+  &:before {
+    content: $jcicon-totop-v2-color-path3;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-totop-v2-color .path4 {
+  &:before {
+    content: $jcicon-totop-v2-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-trap-tool {
+  &:before {
+    content: $jcicon-trap-tool; 
+  }
+}
+.jcicon-trap-tool-color .path1 {
+  &:before {
+    content: $jcicon-trap-tool-color-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-trap-tool-color .path2 {
+  &:before {
+    content: $jcicon-trap-tool-color-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 0, 0);
+  }
+}
+.jcicon-trap-tool-color .path3 {
+  &:before {
+    content: $jcicon-trap-tool-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-trap-tool-color .path4 {
+  &:before {
+    content: $jcicon-trap-tool-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-upload {
+  &:before {
+    content: $jcicon-upload; 
+  }
+}
+.jcicon-upload-color .path1 {
+  &:before {
+    content: $jcicon-upload-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-upload-color .path2 {
+  &:before {
+    content: $jcicon-upload-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-upload-color .path3 {
+  &:before {
+    content: $jcicon-upload-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-upload-color .path4 {
+  &:before {
+    content: $jcicon-upload-color-path4;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-upload-color .path5 {
+  &:before {
+    content: $jcicon-upload-color-path5;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-upload-color .path6 {
+  &:before {
+    content: $jcicon-upload-color-path6;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-upload-color .path7 {
+  &:before {
+    content: $jcicon-upload-color-path7;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-upload-color .path8 {
+  &:before {
+    content: $jcicon-upload-color-path8;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-user .path1 {
+  &:before {
+    content: $jcicon-user-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-user .path2 {
+  &:before {
+    content: $jcicon-user-path2;  
+    margin-left: -1em;  
+    color: rgb(1, 1, 1);
+  }
+}
+.jcicon-user-circle {
+  &:before {
+    content: $jcicon-user-circle; 
+  }
+}
+.jcicon-user-color .path1 {
+  &:before {
+    content: $jcicon-user-color-path1;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-user-color .path2 {
+  &:before {
+    content: $jcicon-user-color-path2;  
+    margin-left: -1em;  
+    color: rgb(212, 85, 0);
+  }
+}
+.jcicon-warn {
+  &:before {
+    content: $jcicon-warn; 
+  }
+}
+.jcicon-warn-circle .path1 {
+  &:before {
+    content: $jcicon-warn-circle-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-warn-circle .path2 {
+  &:before {
+    content: $jcicon-warn-circle-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-warn-circle .path3 {
+  &:before {
+    content: $jcicon-warn-circle-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-warn-circle .path4 {
+  &:before {
+    content: $jcicon-warn-circle-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-warn-circle .path5 {
+  &:before {
+    content: $jcicon-warn-circle-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-warn-circle .path6 {
+  &:before {
+    content: $jcicon-warn-circle-path6;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-warn-color .path1 {
+  &:before {
+    content: $jcicon-warn-color-path1;  
+    color: rgb(255, 102, 0);
+  }
+}
+.jcicon-warn-color .path2 {
+  &:before {
+    content: $jcicon-warn-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-warn-color .path3 {
+  &:before {
+    content: $jcicon-warn-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-warn-triangle {
+  &:before {
+    content: $jcicon-warn-triangle; 
+  }
+}
+.jcicon-warn-triangle-color .path1 {
+  &:before {
+    content: $jcicon-warn-triangle-color-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.jcicon-warn-triangle-color .path2 {
+  &:before {
+    content: $jcicon-warn-triangle-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-warn-triangle-color .path3 {
+  &:before {
+    content: $jcicon-warn-triangle-color-path3;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-warn-triangle-color .path4 {
+  &:before {
+    content: $jcicon-warn-triangle-color-path4;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-warn-triangle-color .path5 {
+  &:before {
+    content: $jcicon-warn-triangle-color-path5;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.jcicon-warn-triangle-color .path6 {
+  &:before {
+    content: $jcicon-warn-triangle-color-path6;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 0);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-wifi {
+  &:before {
+    content: $jcicon-wifi; 
+  }
+}
+.jcicon-wifi-color .path1 {
+  &:before {
+    content: $jcicon-wifi-color-path1;  
+    color: rgb(85, 34, 0);
+  }
+}
+.jcicon-wifi-color .path2 {
+  &:before {
+    content: $jcicon-wifi-color-path2;  
+    margin-left: -1em;  
+    color: rgb(128, 128, 0);
+  }
+}
+.jcicon-wifi-color .path3 {
+  &:before {
+    content: $jcicon-wifi-color-path3;  
+    margin-left: -1em;  
+    color: rgb(34, 142, 142);  
+    opacity: 0.8504;
+  }
+}
+.jcicon-wifi-color .path4 {
+  &:before {
+    content: $jcicon-wifi-color-path4;  
+    margin-left: -1em;  
+    color: rgb(85, 34, 0);
+  }
+}
+.jcicon-window-close {
+  &:before {
+    content: $jcicon-window-close; 
+  }
+}
+.jcicon-window-max {
+  &:before {
+    content: $jcicon-window-max; 
+  }
+}
+.jcicon-window-middle {
+  &:before {
+    content: $jcicon-window-middle; 
+  }
+}
+.jcicon-window-min {
+  &:before {
+    content: $jcicon-window-min; 
+  }
+}
+.jcicon-zoom-in {
+  &:before {
+    content: $jcicon-zoom-in; 
+  }
+}
+.jcicon-zoom-in-color .path1 {
+  &:before {
+    content: $jcicon-zoom-in-color-path1;  
+    color: rgb(40, 11, 11);
+  }
+}
+.jcicon-zoom-in-color .path2 {
+  &:before {
+    content: $jcicon-zoom-in-color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-zoom-out--color .path1 {
+  &:before {
+    content: $jcicon-zoom-out--color-path1;  
+    color: rgb(40, 11, 11);
+  }
+}
+.jcicon-zoom-out--color .path2 {
+  &:before {
+    content: $jcicon-zoom-out--color-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 128, 128);
+  }
+}
+.jcicon-zoom-out {
+  &:before {
+    content: $jcicon-zoom-out; 
+  }
+}
+

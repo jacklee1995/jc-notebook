@@ -1,0 +1,12 @@
+logs
+*.log
+.vscode/*
+!.vscode/extensions.json
+node_modules
+/process_main/node_modules
+/process_main/dist
+/process_main/dist_render
+/process_main/release
+/process_render/**/node_modules
+/process_render/**/.vscode/*
+/process_render/**/!.vscode/extensions.json

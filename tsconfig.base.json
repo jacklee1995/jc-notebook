@@ -1,0 +1,26 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": ".",
+    "sourceMap": false,
+    "allowJs": false,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "removeComments": false,
+    "rootDir": ".",
+    "types": [],
+    "composite": true,
+    "useDefineForClassFields": true,
+    "jsx": "preserve",
+    "isolatedModules": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "noEmit": true,
+    "noImplicitAny": false,
+    "paths": {
+      "@render/*": ["process_render/*"],
+      "@index/*": ["process_render/index/src*"],
+    }
+  }
+}

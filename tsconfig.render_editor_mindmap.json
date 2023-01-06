@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.web.json",
+  "include": [
+    "process_render/editor_mindmap/*",
+    "process_render/editor_mindmap/src/**/*.ts",
+    "process_render/editor_mindmap/src/**/*.d.ts",
+    "process_render/editor_mindmap/src/**/*.tsx",
+    "process_render/editor_mindmap/src/**/*.vue",
+    "process_render/editor_mindmap/env.d.ts"
+  ]
+}

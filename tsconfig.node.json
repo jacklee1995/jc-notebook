@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false
+  },
+  "include": [
+    "process_render/index/vite.config.ts",
+    "process_render/index/vite.util.ts",
+    "process_render/editor_text/vite.config.ts",
+    "process_render/editor_text/vite.util.ts",
+    "process_render/editor_markdown/vite.config.ts",
+    "process_render/editor_markdown/vite.util.ts",
+    "process_render/editor_mindmap/vite.config.ts",
+    "process_render/editor_mindmap/vite.util.ts",
+    "process_render/editor_pointshow/vite.config.ts",
+    "process_render/editor_pointshow/vite.util.ts",
+    "process_render/editor_sketch/vite.config.ts",
+    "process_render/editor_sketch/vite.util.ts",
+    "process_render/viewer_markdown/vite.config.ts",
+    "process_render/viewer_markdown/vite.util.ts",
+    "process_render/sources_manager/vite.config.ts",
+    "process_render/sources_manager/vite.util.ts"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.web.json",
+  "compilerOptions": {
+    "composite": true,
+    "types": [],
+  },
+  "include": [
+    "process_render/editor_sketch/*",
+    "process_render/editor_sketch/src/**/*.ts",
+    "process_render/editor_sketch/src/**/*.d.ts",
+    "process_render/editor_sketch/src/**/*.tsx",
+    "process_render/editor_sketch/src/**/*.vue",
+    "process_render/editor_sketch/env.d.ts"
+  ]
+}

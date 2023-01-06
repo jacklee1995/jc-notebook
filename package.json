@@ -1,0 +1,72 @@
+{
+  "private": true,
+  "name": "jc-notebook",
+  "packageManager": "pnpm@7.18.0",
+  "version": "pre0.0.1",
+  "description": "A electron-vite notebook application.",
+  "keywords": [
+    "notebook",
+    "electron",
+    "typescript",
+    "vue3"
+  ],
+  "author": {
+    "name": "jcLee1995",
+    "email": "291148484@163.com",
+    "url": "https://github.com/jacklee1995/jc-notebook.git"
+  },
+  "workspaces": [
+    "process_render/*",
+    "process_render_packages/*",
+    "process_main"
+  ],
+  "scripts": {
+    "get:env": "pwsh -Command \"[System.Environment]::GetEnvironmentVariable('NODE_ENV')\"",
+    "set:development": "pwsh -Command \"[System.Environment]::SetEnvironmentVariable('NODE_ENV','development','User')\"",
+    "set:production": "pwsh -Command \"[System.Environment]::SetEnvironmentVariable('NODE_ENV','production','User')\"",
+    "inst": "pnpm run set:development && pnpm install",
+    "clean:dist": "rimraf dist",
+    "clean:node_modules": "rimraf node_modules",
+    "clean": "rimraf dist &&  pnpm run rimraf node_modules && pnpm run -r --parallel clean",
+    "vite": "vite build ./process_main",
+    "start": "pnpm run prebuild && concurrently -k \"pnpm run -C process_render/index serve\" \"pnpm run -C process_render/editor_text serve\" \"pnpm run -C process_render/editor_markdown serve\"  \"pnpm run -C process_render/editor_pointshow serve\" \"pnpm run -C process_render/sources_manager serve\" \"pnpm run -C process_main electron:run\"",
+    "serve": "pnpm run set:development && nodemon -e ts --watch process_main/src --exec \"pnpm run start\"",
+    "tsbuild":"pnpm run -C process_main build:tsc",
+    "prebuild": "pnpm run -C process_main build",
+    "renders:build": "pnpm run -C process_render/index build && pnpm run -C process_render/editor_markdown build && pnpm run -C process_render/editor_text build && pnpm run -C process_render/editor_pointshow build && pnpm run -C process_render/sources_manager build",
+    "build": "pnpm run set:production && pnpm run renders:build && pnpm run prebuild && pnpm run -C process_main build:app"
+  },
+  "dependencies": {
+    "@jc-notebook/process_main": "workspace:*",
+    "@jc-notebook/editor_markdown": "workspace:*",
+    "@jc-notebook/editor_mindmap": "workspace:*",
+    "@jc-notebook/editor_pointshow": "workspace:*",
+    "@jc-notebook/editor_text": "workspace:*",
+    "@jc-notebook/index": "workspace:*",
+    "@jc-notebook/sources_manager": "workspace:*",
+    "@jc-notebook/viewer_markdown": "workspace:*",
+    "@jcstudio/plugins": "workspace:*",
+    "@jcstudio/components": "workspace:*",
+    "@jcstudio/views": "workspace:*",
+    "@jcstudio/utils": "workspace:*",
+    "@vue/tsconfig": "^0.1.3",
+    "concurrently": "^7.6.0",
+    "core-js": "^3.26.1",
+    "log4js": "^6.7.1",
+    "node-gyp": "^9.3.0"
+  },
+  "devDependencies": {
+    "@npmcli/fs": "^3.1.0",
+    "@pnpm/find-workspace-packages": "^4.0.16",
+    "@pnpm/logger": "^4.0.0",
+    "@pnpm/types": "^8.4.0",
+    "@types/node": "^18.11.10",
+    "@yarnpkg/core": "4.0.0-rc.32",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.3",
+    "wait-on": "^6.0.1"
+  }
+}
